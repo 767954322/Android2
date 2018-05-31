@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="8.5dp"
+        android:drawableTop="@drawable/ic_promise_1"
+        android:gravity="center"
+        android:text="未开始随时退"
+        android:textColor="#FF999999"
+        android:textSize="9dp" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="8.5dp"
+        android:drawableTop="@drawable/ic_promise_2"
+        android:gravity="center"
+        android:text="超时自动退"
+        android:textColor="#FF999999"
+        android:textSize="9dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="8.5dp"
+        android:drawableTop="@drawable/ic_promise_3"
+        android:gravity="center"
+        android:text="不满意可退单"
+        android:textColor="#FF999999"
+        android:textSize="9dp" />
+
+</merge>

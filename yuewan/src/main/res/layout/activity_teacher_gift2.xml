@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/me_jl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_46"
+        android:background="@color/main_bg_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/ic_arrow_back_black2"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_29.5"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dimen_8"
+            android:src="@drawable/ic_arrow_back_black" />
+
+        <TextView
+            android:id="@+id/record_titler"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="交易记录"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_17" />
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/record_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_42"
+        android:background="@color/color_FEFEFE"
+        app:tabGravity="center"
+        app:tabIndicatorColor="#FFC602"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#FFC602"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="#959595" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/record_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F4F4F4"
+        android:overScrollMode="never" />
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000" >
+
+    <RelativeLayout
+        android:id="@+id/rl_dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_dialog"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="提示"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dialog_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:maxLines="3"
+            android:text="请联系客服解除绑定?"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/dimen_10">
+
+            <Button
+                android:id="@+id/dialog_ok"
+                android:layout_width="55dp"
+                android:layout_height="26dp"
+                android:text="取消"
+                android:background="@drawable/withdrawals_btn_bg"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/dimen_14"
+                android:layout_marginRight="@dimen/dimen_10"/>
+
+            <Button
+                android:id="@+id/dialog_cancel"
+                android:layout_width="55dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/withdrawals_btn_bg"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/dimen_14"
+                android:text="确定" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

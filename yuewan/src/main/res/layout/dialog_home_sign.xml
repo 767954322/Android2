@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#66000000">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:id="@+id/lly_home_content"
+                android:layout_width="@dimen/dimen_220"
+                android:layout_height="@dimen/dimen_168"
+                android:background="@drawable/dialog_home_sigh_bg"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:layout_below="@id/img_home_red_submit"
+                android:layout_marginTop="-20dp"
+                android:gravity="center_horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_42"
+                    android:text="获得专享代金券"
+                    android:textSize="@dimen/dimen_18"
+                    android:textColor="#533637"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_33"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dimen_5">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:text="¥"
+                        android:textSize="@dimen/dimen_14"
+                        android:textColor="#FF4949"
+                        android:paddingBottom="@dimen/dimen_2"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:text="1"
+                        android:textSize="@dimen/dimen_22"
+                        android:textColor="#FF4949"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="@dimen/dimen_180"
+                    android:layout_height="@dimen/dimen_40"
+                    android:background="@drawable/home_button_share"
+                    android:layout_marginTop="@dimen/dimen_13"
+                    android:text="炫耀一下"
+                    android:textSize="@dimen/dimen_16"
+                    android:textColor="#FF4949"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/img_home_red_submit"
+                android:layout_width="@dimen/dimen_315"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_bg_sign_in"
+                android:adjustViewBounds="true"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/tv_home_red_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:src="@drawable/icon_home_red_close"
+        />
+</LinearLayout>

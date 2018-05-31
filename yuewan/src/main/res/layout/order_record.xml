@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45"
+        android:layout_marginLeft="@dimen/iterval_11"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/order_record_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/main_tab_unselected"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/order_record_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/iterval_11"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/color_boy"
+            android:textSize="@dimen/sp_13" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginLeft="@dimen/iterval_11"
+        android:gravity="top">
+
+        <TextView
+            android:id="@+id/order_record_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textColor="@color/reply_button_text_disable"
+            android:textSize="@dimen/sp_11" />
+
+        <TextView
+            android:id="@+id/order_record_item_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/iterval_11"
+            android:text=""
+            android:textColor="@color/reply_button_text_disable"
+            android:textSize="@dimen/sp_11" />
+
+    </RelativeLayout>
+</LinearLayout>

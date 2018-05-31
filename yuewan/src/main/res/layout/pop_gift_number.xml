@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_pop_gift_number"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_gift_number1"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_pop_gift_left"
+            android:text="1" />
+
+        <TextView
+            style="@style/tv_pop_gift_rihgt"
+            android:text="一心一意" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="90dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFF" />
+
+    <FrameLayout
+        android:id="@+id/fl_gift_number2"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_pop_gift_left"
+            android:text="10" />
+
+        <TextView
+            style="@style/tv_pop_gift_rihgt"
+            android:text="十全十美" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="90dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFF" />
+
+    <FrameLayout
+        android:id="@+id/fl_gift_number3"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_pop_gift_left"
+            android:text="66" />
+
+        <TextView
+            style="@style/tv_pop_gift_rihgt"
+            android:text="一切顺利" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="90dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFF" />
+
+    <FrameLayout
+        android:id="@+id/fl_gift_number4"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_pop_gift_left"
+            android:text="188" />
+
+        <TextView
+            style="@style/tv_pop_gift_rihgt"
+            android:text="要抱抱" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="90dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFF" />
+
+    <FrameLayout
+        android:id="@+id/fl_gift_number5"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_pop_gift_left"
+            android:text="520" />
+
+
+        <TextView
+            style="@style/tv_pop_gift_rihgt"
+            android:text="我爱你" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="90dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFF" />
+
+    <FrameLayout
+        android:id="@+id/fl_gift_number6"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_pop_gift_left"
+            android:text="1314"
+
+            />
+
+        <TextView
+            style="@style/tv_pop_gift_rihgt"
+            android:text="一生一世" />
+
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="90dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFF" />
+
+    <FrameLayout
+        android:id="@+id/fl_gift_number7"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            style="@style/tv_pop_gift_rihgt"
+            android:layout_gravity="center"
+            android:layout_marginRight="0dp"
+            android:text="其他数量" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

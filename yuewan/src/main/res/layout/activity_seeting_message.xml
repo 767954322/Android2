@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/addinfo_toobar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/main_bg_color"
+        android:gravity="center_vertical"
+        android:paddingRight="15dp">
+
+
+        <include layout="@layout/include_back_btn" />
+
+        <TextView
+            android:id="@+id/tv_im_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新消息提醒"
+            android:textColor="#000"
+            android:textSize="@dimen/sp_17" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/jx"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/main_bg_color"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/my_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新消息提醒"
+            android:layout_centerVertical="true"
+            android:textSize="15sp" />
+
+        <com.tuwan.yuewan.ui.widget.SwitchButton
+            android:id="@+id/btn_message_show"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:checked="false"
+            android:src="@drawable/more" />
+    </RelativeLayout>
+</LinearLayout>

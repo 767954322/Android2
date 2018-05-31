@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dimen_48"
+    android:background="@drawable/bg_chat_gift">
+    <com.tuwan.yuewan.nim.uikit.common.ui.imageview.HeadImageView
+        android:id="@+id/avchat_gift_head"
+        android:layout_width="@dimen/dimen_36.5"
+        android:layout_height="@dimen/dimen_36.5"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_8"/>
+
+    <LinearLayout
+        android:id="@+id/avchat_gift_middle"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_toRightOf="@+id/avchat_gift_head"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/avchat_gift_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp_10"/>
+
+        <TextView
+            android:id="@+id/avchat_gift_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_EE9800"
+            android:textSize="@dimen/sp_10"
+            android:layout_marginTop="@dimen/dimen_2.5"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/avchat_gift_image"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_toRightOf="@+id/avchat_gift_middle"/>
+
+    <TextView
+        android:id="@+id/avchat_gift_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/sp_10"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_toRightOf="@+id/avchat_gift_image"/>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_titlebar_normal" />
+
+    <ImageView
+        android:id="@+id/iv_service_list_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="42dp"
+            />
+
+        <com.tuwan.yuewan.ui.widget.DropDownMenu
+            android:id="@+id/dropDownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:dividerColor="#0000"
+            app:maskColor="@color/mask_color"
+            app:menuBackgroundColor="#FBFBFB"
+            app:menuSelectedIcon="@drawable/ic_action_hide_arrow"
+            app:menuTextSize="12dp"
+            app:menuUnselectedIcon="@drawable/ic_action_show_arrow"
+            app:textSelectedColor="#FFC602"
+            app:textUnselectedColor="#666"
+            app:underlineColor="@color/color_list_bg" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

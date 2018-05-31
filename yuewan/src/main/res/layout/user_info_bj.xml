@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg">
+
+    <com.tuwan.yuewan.ui.widget.teacher.TeacherTitlebarContainerView
+        android:id="@+id/titlebar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.tuwan.yuewan.ui.widget.teacher.TeacherContentTitlebarView
+            android:id="@+id/titlebar_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/color_list_bg" />
+
+        <com.tuwan.yuewan.ui.widget.TitlebarView
+            android:id="@+id/titlebar_toptitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height" />
+
+        <include layout="@layout/include_tablayout_teacher_main" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_list_bg" />
+
+    </com.tuwan.yuewan.ui.widget.teacher.TeacherTitlebarContainerView>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tbv"
+        android:layout_marginBottom="49dp"
+        app:layout_behavior="com.tuwan.yuewan.ui.widget.teacher.APScrollingBehavior" />
+
+    <com.tuwan.yuewan.ui.widget.TeacherBtmView
+        android:id="@+id/btm_teacherbtm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" />
+
+
+</android.support.design.widget.CoordinatorLayout>

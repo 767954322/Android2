@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/main_bg_color"
+    android:layout_height="match_parent">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/teacherparticulars_more_popupbackground2"
+        app:layout_heightPercent="14.6%h"
+        app:layout_widthPercent="25.5%w">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/reject_icon2"
+            app:layout_marginLeftPercent="20%w"
+            app:layout_marginTopPercent="20%h" />
+
+        <TextView
+            android:id="@+id/menu_jj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拒绝"
+            android:textColor="#fff"
+            app:layout_marginLeftPercent="60.4%w"
+            app:layout_marginTopPercent="20%h" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="0.67dp"
+            android:layout_marginLeft="15dp"
+            android:background="#fff"
+            app:layout_marginTopPercent="50%h" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/complaints_icon2"
+            app:layout_marginLeftPercent="20%w"
+            app:layout_marginTopPercent="60%h" />
+
+        <TextView
+            android:id="@+id/menu_TS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投诉"
+
+            android:textColor="#fff"
+            app:layout_marginLeftPercent="60%w"
+            app:layout_marginTopPercent="60%h" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical"
+    tools:context="com.tuwan.yuewan.ui.activity.teacher.WithdrawalsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/main_bg_color"
+        android:gravity="center_vertical"
+        android:paddingRight="15dp">
+        <include layout="@layout/include_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="提现"
+            android:textColor="#000"
+            android:textSize="@dimen/dimen_17" />
+
+        <TextView
+            android:id="@+id/record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="记录" />
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+
+        android:layout_gravity="center"
+        android:background="@drawable/withdrawal_bg"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/with_type"
+                android:textColor="#FF999999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/with_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="#FF999999" />
+
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/button_bangding"
+            android:layout_width="65dp"
+            android:layout_height="24dp"
+            android:text="去绑定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_12"
+            android:visibility="gone"
+            android:background="@drawable/withdrawals_btn_bg"
+            android:layout_gravity="right"
+            />
+        <TextView
+            android:id="@+id/tixian__"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="（提现无手续费）"
+            android:textColor="#FF999999" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110px"
+            android:textSize="28px"
+             android:textColor="#FF999999"
+            android:text="提现金额" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <com.tuwan.yuewan.ui.widget.ClearEditText
+                android:id="@+id/with_et_money"
+                android:inputType="number"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:textColorHint="#FF999999"
+                android:hint="请输入您要提现的金额"
+                android:textColor="#FF999999"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#F1F1F2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp">
+
+            <TextView
+                android:id="@+id/with_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="输入金额需为10的倍数"
+                android:textColor="#FF999999"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/with_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+
+                android:textColor="#FF999999"
+                android:textSize="30px" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_20">
+            <ImageView
+                android:id="@+id/img_protocol"
+                android:layout_width="@dimen/dimen_15"
+                android:layout_height="@dimen/dimen_15"
+                android:src="@drawable/pay_choose3x"/>
+            <TextView
+                android:id="@+id/tv_protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我已阅读、理解并同意 点点约玩结算协议"
+                android:textSize="@dimen/dimen_12"
+                android:textColor="#FF999999"
+                android:layout_marginLeft="@dimen/dimen_5"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/with_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:textSize="30px"
+            android:background="#FFC71A"
+            android:text="提现"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="22px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="少于100不可提现，提现金额为10的倍数"
+            android:textColor="#FF999999" />
+
+        <TextView
+            android:id="@+id/with_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50px"
+            android:text="常见问题"
+            android:textColor="#F5BB18" />
+    </LinearLayout>
+</LinearLayout>

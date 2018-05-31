@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/dimen_10">
+
+    <TextView
+        android:id="@+id/tv_main_tryst_remarks"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_24"
+        android:paddingLeft="@dimen/dimen_5"
+        android:paddingRight="@dimen/dimen_5"
+        android:gravity="center"
+        android:text="医疗兵"
+        android:textColor="#666666"
+        android:textSize="@dimen/dimen_10"
+        android:background="@drawable/text_biankuang"
+        android:minWidth="@dimen/dimen_58"/>
+</LinearLayout>

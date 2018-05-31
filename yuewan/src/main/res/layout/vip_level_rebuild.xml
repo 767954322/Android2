@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="35dp"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:id="@+id/scrollvieww"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/progtou"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="75.5dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="18dp"
+                android:max="100"
+                android:progressBackgroundTint="#94979C"
+                android:progressDrawable="@drawable/progressbar2"
+                android:secondaryProgress="100" />
+
+
+            <ProgressBar
+                android:id="@+id/prog1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="122dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="18dp"
+                android:max="100"
+                android:progressBackgroundTint="#94979C"
+                android:progressDrawable="@drawable/progressbar2"
+                android:layout_marginLeft="109.5dp" />
+
+
+            <ProgressBar
+                android:id="@+id/prog2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="122dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="18dp"
+                android:max="100"
+                android:progressBackgroundTint="#94979C"
+                android:progressDrawable="@drawable/progressbar2"
+                android:layout_marginLeft="265.2dp"/>
+
+
+            <ProgressBar
+                android:id="@+id/prog3"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="122dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="18dp"
+                android:max="100"
+                android:progressBackgroundTint="#94979C"
+                android:progressDrawable="@drawable/progressbar2"
+                android:layout_marginLeft="421.5dp" />
+
+
+            <ProgressBar
+                android:id="@+id/prog4"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="122dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="18dp"
+                android:max="100"
+                android:progressBackgroundTint="#94979C"
+                android:progressDrawable="@drawable/progressbar2"
+                android:layout_marginLeft="577.5dp" />
+
+
+            <ProgressBar
+                android:id="@+id/prog5"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="122dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="18dp"
+                android:max="100"
+                android:progressBackgroundTint="#94979C"
+                android:progressDrawable="@drawable/progressbar2"
+                android:layout_marginLeft="733.5dp" />
+
+
+
+            <ProgressBar
+                android:id="@+id/prog6"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="122dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="18dp"
+                android:max="100"
+                android:progressBackgroundTint="#94979C"
+                android:progressDrawable="@drawable/progressbar2"
+                android:layout_marginLeft="889.5dp"/>
+
+
+
+            <ProgressBar
+                android:id="@+id/prog7"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="122dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="18dp"
+                android:max="100"
+                android:progressBackgroundTint="#94979C"
+                android:progressDrawable="@drawable/progressbar2"
+                android:layout_marginLeft="1045.5dp" />
+
+            <ProgressBar
+                android:id="@+id/prog8"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="122dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="18dp"
+                android:max="100"
+                android:progressBackgroundTint="#94979C"
+                android:progressDrawable="@drawable/progressbar2"
+                android:layout_marginLeft="1201.5dp" />
+
+
+            <ProgressBar
+                android:id="@+id/prog9"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="122dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="18dp"
+                android:max="100"
+                android:progressBackgroundTint="#94979C"
+                android:progressDrawable="@drawable/progressbar2"
+                android:layout_marginLeft="1357.5dp" />
+
+            <ProgressBar
+                android:id="@+id/prog10"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="122dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="18dp"
+                android:max="100"
+                android:progressBackgroundTint="#94979C"
+                android:progressDrawable="@drawable/progressbar2"
+                android:layout_marginLeft="1513.5dp"/>
+
+
+            <RelativeLayout
+                android:id="@+id/dj1"
+                android:layout_width="@dimen/dimen_74"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-20dp"
+                android:layout_toRightOf="@+id/progtou">
+
+                <ImageView
+                    android:id="@+id/vip_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/commoner" />
+
+                <TextView
+                    android:id="@+id/tv_vip0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vip_image1"
+                    android:layout_centerHorizontal="true"
+                    android:text="平民(VIP0)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_vip0"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="无贡献值"
+                    android:textColor="#E9E9E9"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/dj2"
+                android:layout_width="@dimen/dimen_74"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-20dp"
+                android:layout_toRightOf="@+id/prog1">
+
+                <ImageView
+                    android:id="@+id/vip_image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/knight" />
+
+                <TextView
+                    android:id="@+id/tv_vip1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vip_image2"
+                    android:layout_centerHorizontal="true"
+                    android:text="骑士(VIP1)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/vip_tv_devote1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_vip1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="无贡献值"
+                    android:textColor="#E9E9E9"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dj3"
+                android:layout_width="@dimen/dimen_74"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-20dp"
+                android:layout_toRightOf="@+id/prog2">
+
+                <ImageView
+                    android:id="@+id/vip_image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/baron" />
+
+                <TextView
+                    android:id="@+id/tv_vip2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vip_image3"
+                    android:layout_centerHorizontal="true"
+                    android:text="男爵(VIP2)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/vip_tv_devote2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_vip2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="无贡献值"
+                    android:textColor="#E9E9E9"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/dj4"
+                android:layout_width="@dimen/dimen_74"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-20dp"
+                android:layout_toRightOf="@+id/prog3">
+
+                <ImageView
+                    android:id="@+id/vip_image4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/viscount" />
+
+                <TextView
+                    android:id="@+id/tv_vip3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vip_image4"
+                    android:layout_centerHorizontal="true"
+                    android:text="子爵(VIP3)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/vip_tv_devote3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_vip3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="无贡献值"
+                    android:textColor="#E9E9E9"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/dj5"
+                android:layout_width="@dimen/dimen_74"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-20dp"
+                android:layout_toRightOf="@+id/prog4">
+
+                <ImageView
+                    android:id="@+id/vip_image5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/earl" />
+
+                <TextView
+                    android:id="@+id/tv_vip4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vip_image5"
+                    android:layout_centerHorizontal="true"
+                    android:text="伯爵(VIP4)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/vip_tv_devote4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_vip4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="无贡献值"
+                    android:textColor="#E9E9E9"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dj6"
+                android:layout_width="@dimen/dimen_74"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-20dp"
+                android:layout_toRightOf="@+id/prog5">
+
+                <ImageView
+                    android:id="@+id/vip_image6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/marquis" />
+
+                <TextView
+                    android:id="@+id/tv_vip5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vip_image6"
+                    android:layout_centerHorizontal="true"
+                    android:text="侯爵(VIP5)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/vip_tv_devote5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_vip5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="无贡献值"
+                    android:textColor="#E9E9E9"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dj7"
+                android:layout_width="@dimen/dimen_74"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-20dp"
+                android:layout_toRightOf="@+id/prog6">
+
+                <ImageView
+                    android:id="@+id/vip_image7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/duke" />
+
+                <TextView
+                    android:id="@+id/tv_vip6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vip_image7"
+                    android:layout_centerHorizontal="true"
+                    android:text="公爵(VIP6)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/vip_tv_devote6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_vip6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="无贡献值"
+                    android:textColor="#E9E9E9"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dj8"
+                android:layout_width="@dimen/dimen_74"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-20dp"
+                android:layout_toRightOf="@+id/prog7">
+
+                <ImageView
+                    android:id="@+id/vip_image8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/prince" />
+
+                <TextView
+                    android:id="@+id/tv_vip7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vip_image8"
+                    android:layout_centerHorizontal="true"
+                    android:text="亲王(VIP7)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/vip_tv_devote7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_vip7"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="无贡献值"
+                    android:textColor="#E9E9E9"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dj9"
+                android:layout_width="@dimen/dimen_74"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-20dp"
+                android:layout_toRightOf="@+id/prog8">
+
+                <ImageView
+                    android:id="@+id/vip_image9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/king1" />
+
+                <TextView
+                    android:id="@+id/tv_vip8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vip_image9"
+                    android:layout_centerHorizontal="true"
+                    android:text="国王(VIP8)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/vip_tv_devote8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_vip8"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="无贡献值"
+                    android:textColor="#E9E9E9"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dj10"
+                android:layout_width="@dimen/dimen_74"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-20dp"
+                android:layout_toRightOf="@+id/prog9">
+
+                <ImageView
+                    android:id="@+id/vip_image10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/king2" />
+
+                <TextView
+                    android:id="@+id/tv_vip9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vip_image10"
+                    android:layout_centerHorizontal="true"
+                    android:text="皇帝(VIP9)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/vip_tv_devote9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_vip9"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="无贡献值"
+                    android:textColor="#E9E9E9"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dj11"
+                android:layout_width="@dimen/dimen_74"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-20dp"
+                android:layout_toRightOf="@+id/prog10">
+
+                <ImageView
+                    android:id="@+id/vip_image11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/emperor" />
+
+                <TextView
+                    android:id="@+id/tv_vip10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vip_image11"
+                    android:layout_centerHorizontal="true"
+                    android:text="玉帝(VIP10)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/vip_tv_devote10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_vip10"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="无贡献值"
+                    android:textColor="#E9E9E9"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+</LinearLayout>

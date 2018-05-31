@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFBFBFB"
+    tools:context="com.tuwan.yuewan.ui.fragment.record.AllRecordFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:id="@+id/all_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/color_EFEFEF"
+        android:dividerHeight="1dp"></ListView>
+
+    <LinearLayout
+        android:id="@+id/layout_jl"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:src="@drawable/transaction_iconjl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="您还没有相关的交易记录"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/messages_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar_session"/>
+
+    <include layout="@layout/network_status_bar" />
+
+    <include layout="@layout/multiport_status_bar"   />
+`
+   <!-- <FrameLayout
+        android:id="@+id/fl_container_session"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+
+    <fragment
+        android:id="@+id/recent_contacts_fragment"
+        android:name="com.tuwan.yuewan.nim.uikit.recent.RecentContactsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </fragment>
+
+
+</LinearLayout>

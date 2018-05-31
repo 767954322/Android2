@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:background="@drawable/bg_session_ticket"
+        android:paddingLeft="@dimen/app_margin"
+        android:paddingRight="@dimen/app_margin">
+
+
+        <TextView
+            android:id="@+id/tv_session_ticket_title"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:gravity="center_vertical"
+            android:textColor="#666"
+            android:textSize="14dp"
+            tools:text="恭喜您，获得一张优惠卷！" />
+
+        <ImageView
+            android:layout_width="314.5dp"
+            android:layout_height="1.5dp"
+            android:layout_below="@+id/tv_session_ticket_title"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_pay_sucess_bash" />
+
+        <ImageView
+            android:id="@+id/iv_session_ticket_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/tv_session_ticket_title"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/tv_session_ticket_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_session_ticket_title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/iv_session_ticket_icon"
+            android:textColor="#333"
+            android:textSize="14dp"
+            tools:text="线上LOL优惠卷" />
+
+
+        <TextView
+            android:id="@+id/tv_session_ticket_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_session_ticket_name"
+            android:layout_below="@+id/tv_session_ticket_name"
+            android:layout_marginTop="5dp"
+            android:textColor="#999"
+            android:textSize="10dp"
+            tools:text="仅限线上LOL使用" />
+
+        <TextView
+            android:id="@+id/tv_session_ticket_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_session_ticket_name"
+            android:layout_below="@+id/tv_session_ticket_intro"
+            android:layout_marginTop="2dp"
+            android:textColor="#999"
+            android:textSize="10dp"
+            tools:text="有效期：2017.08.08" />
+
+        <TextView
+            android:id="@+id/tv_session_ticket_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_session_ticket_unit"
+            android:layout_toLeftOf="@+id/tv_session_ticket_unit"
+            android:textColor="#FF4949"
+            android:textSize="23dp"
+            tools:text="20" />
+
+        <TextView
+            android:id="@+id/tv_session_ticket_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_session_ticket_use"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:textColor="#FF4949"
+            android:textSize="12dp"
+            tools:text="元" />
+
+        <TextView
+            android:id="@+id/tv_session_ticket_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="26.5dp"
+            android:textColor="#999"
+            android:textSize="10dp"
+            tools:text="满200元使用" />
+
+
+    </RelativeLayout>
+</merge>

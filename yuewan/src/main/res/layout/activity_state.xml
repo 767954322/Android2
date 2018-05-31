@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical"
+    tools:context="com.tuwan.yuewan.ui.activity.StateActivity">
+
+    <RelativeLayout
+        android:id="@+id/state_toobar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/main_bg_color"
+        android:gravity="center_vertical"
+        android:paddingRight="15dp">
+
+        <include layout="@layout/include_back_btn" />
+
+        <TextView
+            android:id="@+id/state_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="审核中"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_17" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F6"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/state_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/review_icon2x" />
+
+            <TextView
+                android:id="@+id/state_states"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="审核中..."
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/state_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="请关注APP消息，耐心等待结果"
+                android:textColor="#A8A8A8" />
+
+            <TextView
+                android:id="@+id/state_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="我们会在1~3个工作日内为您审核"
+                android:textColor="#A8A8A8" />
+
+            <TextView
+                android:id="@+id/state_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="在此期间可阅读陪玩守则"
+                android:textColor="#A8A8A8" />
+
+            <TextView
+                android:id="@+id/state_sz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="点点约玩-陪玩守则"
+                android:textColor="#FAD962" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/state_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#FFC71A"
+            android:visibility="gone"
+            android:text="重新申请" />
+    </RelativeLayout>
+</LinearLayout>

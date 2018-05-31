@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical"
+    tools:context="com.tuwan.yuewan.ui.activity.PerfectActivity">
+
+    <RelativeLayout
+        android:id="@+id/cjzl"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/main_bg_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <include layout="@layout/include_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="创建我的资料"
+            android:textColor="#000"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="26dp">
+
+        <ImageView
+            android:id="@+id/zl_icon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/empty_pic" />
+
+        <ImageView
+            android:id="@+id/zl_photos"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/content_pic_shootbutton" />
+    </RelativeLayout>
+
+    <com.tuwan.yuewan.ui.widget.ClearEditText
+        android:id="@+id/zl_nc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="39dp"
+        android:hint="昵称"
+        android:paddingLeft="10dp"
+        android:textColorHint="#BBBBBB"
+        android:textSize="18sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/zl_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="年龄"
+            android:paddingLeft="10dp"
+            android:textColorHint="#BBBBBB"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/age_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="5dp"
+            android:src="@drawable/age_choose" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:text="性别"
+            android:textColor="#BBBBBB"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/zl_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/zl_man"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/man_selecor"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/man_icon"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="男生" />
+
+            <RadioButton
+                android:id="@+id/zl_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/woman_selector"
+                android:button="@null"
+                android:drawableLeft="@drawable/women_icon"
+                android:paddingLeft="30dp"
+                android:text="女生" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/zl_wc"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@+id/tv_welcome_register"
+        android:layout_below="@+id/et_login_pwd"
+        android:layout_marginBottom="17.5dp"
+        android:layout_marginLeft="27.5dp"
+        android:layout_marginRight="27.5dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/shape_text_bg_maincolor_radiusall"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="#FFF"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="注册成功后，性别不可修改"
+        android:textColor="#CCCCCC" />
+</LinearLayout>

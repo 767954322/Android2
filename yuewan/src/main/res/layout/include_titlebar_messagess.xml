@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message_titlebar_service_relative"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:visibility="gone"
+    android:background="@color/color_toolbar_bg">
+
+    <ImageView
+        android:id="@+id/message_titlebar_service_img"
+        android:layout_width="@dimen/toolbar_height"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_marginLeft="@dimen/iterval_10"
+        android:layout_weight="1"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/iterval_6"
+        android:src="@drawable/teacherappraise_star_light3x" />
+
+    <LinearLayout
+        android:id="@+id/message_titlebar_service_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/message_titlebar_service_img"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/message_titlebar_service_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/message_titlebar_service_pricestr"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/color_FF4949"
+            android:textSize="@dimen/sp_12" />
+
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/message_titlebar_service_prading"
+        android:layout_width="@dimen/dimen_39.5"
+        android:layout_height="@dimen/dimen_20"
+        android:layout_alignTop="@+id/message_titlebar_service_linear"
+        android:layout_marginLeft="@dimen/dimen_6"
+        android:layout_toRightOf="@id/message_titlebar_service_linear"
+        android:background="@drawable/service_image_shape"
+        android:gravity="center"
+        android:padding="@dimen/iterval_3"
+        android:text="钻石"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/sp_9" />
+
+    <TextView
+        android:id="@+id/message_titlebar_service_order"
+        android:layout_width="@dimen/dimen_58"
+        android:layout_height="@dimen/dimen_28"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/iterval_9"
+        android:background="@drawable/service_order_shape"
+        android:gravity="center"
+        android:padding="@dimen/iterval_3"
+        android:paddingLeft="@dimen/dimen_7.5"
+        android:paddingRight="@dimen/dimen_7.5"
+        android:text="下单约TA"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_10" />
+
+</RelativeLayout>

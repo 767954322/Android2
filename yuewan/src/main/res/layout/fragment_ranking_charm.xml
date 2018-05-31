@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_container_inner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+></FrameLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/ui_10_dip"
+        android:background="@drawable/with_btn_on"
+        android:layout_alignParentRight="true"
+        android:layout_width="140px"
+        android:layout_height="50px">
+        <Button
+            android:text="月榜"
+            android:id="@+id/button_on"
+            android:textSize="@dimen/dimen_10"
+            android:background="@drawable/with_btn_off"
+            android:layout_width="70px"
+            android:layout_height="50px" />
+        <Button
+            android:text="总榜"
+            android:id="@+id/button_off"
+
+            android:textSize="@dimen/dimen_10"
+            android:background="@drawable/with_btn_on"
+            android:layout_width="70px"
+            android:layout_height="50px" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

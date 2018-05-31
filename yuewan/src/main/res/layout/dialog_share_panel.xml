@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F7F7F7">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/tv_dialog_share_wechat"
+            style="@style/ShareIcon"
+            android:drawableTop="@drawable/bg_dialog_share_wechat"
+            android:text="微信" />
+
+        <TextView
+            android:id="@+id/tv_dialog_share_circle"
+            style="@style/ShareIcon"
+            android:drawableTop="@drawable/bg_dialog_share_circle"
+            android:text="朋友圈" />
+
+
+        <TextView
+            android:id="@+id/tv_dialog_share_qq"
+            style="@style/ShareIcon"
+            android:drawableTop="@drawable/bg_dialog_share_qq"
+            android:text="QQ" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_dialog_share_qrcode"-->
+            <!--style="@style/ShareIcon"-->
+            <!--android:drawableTop="@drawable/bg_dialog_share_qrcode"-->
+            <!--android:text="二维码" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll1"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <TextView
+        android:id="@+id/tv_dialog_share_sina"
+        style="@style/ShareIcon"
+        android:drawableTop="@drawable/bg_dialog_share_wb"
+        android:text="新浪微博" />
+        <TextView
+            android:id="@+id/tv_dialog_share_report"
+            style="@style/ShareIcon"
+            android:drawableTop="@drawable/bg_dialog_share_report"
+            android:text="举报" />
+        <TextView
+            android:id="@+id/tv_dialog_share_addblacklist"
+            style="@style/ShareIcon"
+            android:drawableTop="@drawable/bg_dialog_share_addblacklist"
+            android:text="拉黑" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_dialog_share_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFF"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#FF333333"
+        android:textSize="15dp" />
+</RelativeLayout>

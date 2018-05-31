@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_44"
+    android:background="@color/color_FFFFFF">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/include_back_btn" />
+
+        <TextView
+            android:id="@+id/tv_titlebar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:maxEms="10"
+            android:text="技能服务"
+            android:textColor="@color/color_toolbar_text"
+            android:textSize="@dimen/sp_17"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_titlebar_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dimen_10"
+            android:src="@drawable/ic_more_black" />
+
+        <TextView
+            android:id="@+id/text_fabu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:enabled="true"
+            android:padding="@dimen/dimen_10"
+            android:text="发布"
+            android:visibility="gone" />
+
+        <View
+            style="@style/toolbarline"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

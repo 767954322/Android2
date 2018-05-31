@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tuwan.yuewan.ui.widget.RankingTopThree xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/manlist"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:arrow_margin_right="@dimen/app_min_margin"
+    app:left_drawable="@drawable/ic_main_devoterank"
+    app:left_text="魅力贡献榜">
+
+
+</com.tuwan.yuewan.ui.widget.RankingTopThree>

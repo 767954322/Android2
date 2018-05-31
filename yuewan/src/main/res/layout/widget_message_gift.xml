@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_widget_gift"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/tv_widget_gift_intro"
+        android:overScrollMode="never"
+        android:layout_marginBottom="@dimen/dimen_5"
+        android:scrollbars="none" />
+
+    <View style="@style/toolbarline" />
+
+    <TextView
+        android:id="@+id/tv_widget_gift_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/dimen_5"
+        android:textColor="#FF666666"
+        android:textSize="@dimen/sp_12"
+        tools:text="- 赠送钻戒后将获得表白7天 -" />
+
+
+    <TextView
+        android:id="@+id/tv_widget_gift_ywb"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_49"
+        android:layout_alignTop="@+id/loPageTurningPoint"
+        android:layout_marginLeft="@dimen/dimen_11"
+        android:drawableLeft="@drawable/daimon_icon2x"
+        android:drawablePadding="@dimen/dimen_5"
+        android:gravity="center"
+        android:textColor="#FF999999"
+        android:textSize="@dimen/dimen_12"
+
+        tools:text="0" />
+
+
+    <TextView
+        android:id="@+id/tv_widget_gift_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/loPageTurningPoint"
+        android:layout_marginLeft="@dimen/dimen_4"
+        android:layout_toRightOf="@+id/tv_widget_gift_ywb"
+        android:gravity="center"
+        android:text="充值 >"
+        android:textColor="#FF666666"
+        android:drawablePadding="@dimen/dimen_2"
+        android:textSize="@dimen/sp_12" />
+
+    <LinearLayout
+        android:id="@+id/loPageTurningPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/ll_widget_gift_number"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_31"
+        android:layout_alignTop="@+id/loPageTurningPoint"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_9"
+        android:layout_toLeftOf="@+id/tv_widget_gift_send"
+        android:background="@drawable/shape_gift_number"
+        android:gravity="center"
+        android:minWidth="@dimen/dimen_69"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10">
+
+        <TextView
+            android:id="@+id/tv_widget_gift_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1个"
+            android:textColor="#FF666666"
+            android:textSize="@dimen/sp_12" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_top" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_widget_gift_send"
+        android:layout_width="@dimen/dimen_69"
+        android:layout_height="@dimen/dimen_31"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/loPageTurningPoint"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_9"
+        android:background="@drawable/shape_gift_send"
+        android:gravity="center"
+        android:text="赠送"
+        android:textColor="#FF333333"
+        android:textSize="@dimen/sp_12" />
+
+    <View
+        style="@style/toolbarline"
+        android:layout_alignTop="@+id/loPageTurningPoint" />
+
+</RelativeLayout>

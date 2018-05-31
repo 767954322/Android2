@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg">
+
+    <TextView
+        android:id="@+id/tv_dialog_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_40"
+        android:gravity="center"
+        android:paddingLeft="@dimen/app_margin"
+        android:paddingRight="@dimen/app_margin"
+        android:text="取消"
+        android:textSize="@dimen/sp_16"
+        android:textColor="#999" />
+
+    <TextView
+        android:id="@+id/tv_dialog_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_15"
+        android:text="确定"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/colorPrimary" />
+
+
+    <com.tuwan.common.ui.widget.loopview.LoopView
+        android:id="@+id/loopView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_150"
+        android:layout_below="@+id/tv_dialog_confirm"
+        app:awv_isLoop="false"
+        app:awv_textsize="14" />
+
+    <View
+        style="@style/toolbarline"
+        android:layout_below="@+id/tv_dialog_confirm" />
+
+</RelativeLayout>

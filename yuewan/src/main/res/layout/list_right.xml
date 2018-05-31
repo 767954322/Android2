@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:gravity="center_horizontal"
+        android:padding="@dimen/ui_10_dip"
+        android:textColor="#393939"
+        android:text="城市"
+        android:textSize="15dp"
+        android:id="@+id/list_view_item_text_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</android.support.constraint.ConstraintLayout>

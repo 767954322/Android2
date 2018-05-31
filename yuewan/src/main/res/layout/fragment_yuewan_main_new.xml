@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <com.tuwan.yuewan.view.CustomScrollView
+        android:id="@+id/sv_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <RelativeLayout
+                android:id="@+id/rll_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.tuwan.common.ui.widget.convenientbanner.ConvenientBanner
+                    android:id="@+id/convenientBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:canLoop="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_30"
+                    android:background="@drawable/main_new_bg"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="-15dp"
+                    android:layout_marginLeft="-16dp"
+                    android:layout_marginRight="-16dp"
+                    android:visibility="visible">
+
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/lly_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_100"
+                    android:weightSum="4"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lly_main_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.tuwan.yuewan.view.CustomScrollView>
+
+</RelativeLayout>

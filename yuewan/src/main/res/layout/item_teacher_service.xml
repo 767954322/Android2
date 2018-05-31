@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_service_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:id="@+id/tv_sercice_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_service_icon"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/iv_service_icon"
+            android:textColor="#FF333333"
+            android:textSize="14dp"
+            tools:text="线上LOL" />
+
+        <TextView
+            android:id="@+id/tv_sercice_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_sercice_name"
+            android:layout_below="@+id/tv_sercice_name"
+            android:layout_marginTop="9dp"
+            android:textColor="#FF999999"
+            android:textSize="11dp"
+            tools:text="接单 21次" />
+
+
+        <TextView
+            android:id="@+id/tv_sercice_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_sercice_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_sercice_name"
+            android:background="@drawable/shape_teacher_level2"
+            android:gravity="center"
+            android:paddingBottom="1dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="1dp"
+            android:textColor="#999"
+            android:textSize="10dp"
+            tools:text="钻石" />
+
+        <TextView
+            android:id="@+id/tv_sercice_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="19dp"
+            android:gravity="bottom"
+            android:textColor="#FF4949"
+            android:textSize="11dp"
+            tools:text="25" />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/dash_view"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/shape_teacher_dash"
+        android:layerType="software" />
+
+</FrameLayout>

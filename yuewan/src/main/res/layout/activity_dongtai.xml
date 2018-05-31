@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.tuwan.yuewan.ui.activity.dongtaiActivity">
+
+
+    <include layout="@layout/include_titlebar_teacher" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.tuwan.yuewan.ui.widget.ClearEditText
+        android:id="@+id/edit"
+        android:hint="  此时此刻，想和大家分享点什么呢"
+        android:gravity="top"
+        android:textSize="30px"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <ImageView
+        android:id="@+id/image_pai"
+        android:src="@drawable/ic_report_photo"
+        android:layout_margin="@dimen/ui_10_dip"
+        android:layout_alignBottom="@+id/edit"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <TextView
+                android:text="好看的自拍可以提高200%的接单率"
+            android:layout_below="@+id/image_pai"
+            android:textSize="25px"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
+
+
+
+
+
+</LinearLayout>

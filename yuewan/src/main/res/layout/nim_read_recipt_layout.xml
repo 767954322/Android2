@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textViewAlreadyRead"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:layout_marginLeft="12.5dp"
+    android:layout_marginRight="12.5dp"
+    android:layout_marginTop="2dp"
+    android:background="@drawable/shape_message_readed"
+    android:paddingBottom="1.5dp"
+    android:paddingLeft="2.5dp"
+    android:paddingRight="2.5dp"
+    android:paddingTop="1.5dp"
+    android:text="@string/readed"
+    android:textColor="#fff"
+    android:textSize="9dp"
+    android:visibility="gone" />

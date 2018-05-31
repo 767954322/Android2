@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginBottom="1dp"
+    android:layout_height="100dp">
+    <LinearLayout
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_follow_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#F4F4F4"
+            android:textColor="#999999"
+            android:paddingLeft="15dip"
+            android:paddingTop="3dip"
+            android:paddingBottom="3dip"
+            android:visibility="gone"
+            android:text="A"
+            android:textSize="@dimen/dimen_10"
+            />
+    </LinearLayout>
+
+    <com.tuwan.yuewan.utils.MyRecyclerViewItem
+        android:layout_weight="1"
+        android:id="@+id/scroll_item"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<LinearLayout
+
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_marginLeft="@dimen/dimen_15"
+    android:id="@+id/content_layout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_weight="1"
+        android:id="@+id/layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:padding="5dp"
+                android:id="@+id/image_back"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/empty_pic"
+                app:riv_oval="true"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_weight="0.8"
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="小可爱"
+                    android:id="@+id/text_name"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_weight="1.8"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:id="@+id/back_sexs"
+                        android:layout_width="@dimen/dimen_30"
+                        android:layout_height="@dimen/dimen_15"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/sex_woman"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/sex_back"
+                            android:layout_width="@dimen/dimen_9.5"
+                            android:layout_height="@dimen/dimen_9.5"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/sign_mal2x" />
+
+                        <TextView
+                            android:id="@+id/back_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20"
+                            android:textSize="@dimen/dimen_9"
+                            android:layout_gravity="center_vertical"
+
+
+                            android:textColor="#fff"
+                            />
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:background="@drawable/king1"
+                        android:id="@+id/grading"
+                        android:layout_width="30dp"
+                        android:layout_height="14dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_weight="0.8"
+                android:gravity="bottom"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_dq"
+                    android:gravity="right"
+                    android:text="朝鲜|大河"
+                    android:textSize="9sp"
+                    android:textColor="#c2c2c2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:background="#da3312"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--自定义侧边菜单布局-->
+
+        <TextView
+            android:id="@+id/click"
+            android:text="移除"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</LinearLayout>
+
+
+    </com.tuwan.yuewan.utils.MyRecyclerViewItem>
+
+
+
+</LinearLayout>

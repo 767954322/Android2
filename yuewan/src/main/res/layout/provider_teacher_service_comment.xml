@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_main_bg"
+    android:paddingBottom="15dp"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:background="@drawable/shape_teacher_dash"
+        android:layerType="software" />
+
+    <ImageView
+        android:id="@+id/iv_item_comment"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginTop="24dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_item_comment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/iv_item_comment"
+        android:textColor="#FF666666"
+        android:textSize="11dp"
+        tools:text="寡神***" />
+
+    <TextView
+        android:id="@+id/tv_item_comment_liangcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_item_comment_name"
+        android:layout_marginLeft="9dp"
+        android:layout_toRightOf="@+id/tv_item_comment_name"
+        android:background="@drawable/shape_liang_code"
+        android:paddingBottom="1dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="1dp"
+        android:textColor="#FFFFFFFF"
+        android:textSize="9dp"
+        tools:text="靓 998877" />
+
+    <TextView
+        android:id="@+id/tv_item_comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_item_comment_name"
+        android:layout_below="@+id/tv_item_comment_name"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginTop="6dp"
+        android:lineSpacingExtra="1dp"
+        android:textColor="#FF666666"
+        android:textSize="13dp"
+        tools:text="66666dasdsafdsafsadfasdfasdfsafasdfasdffsadfasdfasdfasdfsdfasdf" />
+
+
+    <TextView
+        android:id="@+id/tv_item_comment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_item_comment_name"
+        android:layout_below="@+id/tv_item_comment_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#FFC0C0C0"
+        android:textSize="10dp"
+        tools:text="2017-07-16 15:24" />
+
+
+    <TextView
+        android:id="@+id/tv_item_comment_content_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_comment_time"
+        android:layout_marginLeft="66dp"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/ic_item_comment_reply"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="0.5dp"
+        android:textColor="#333"
+        android:textSize="12dp"
+        android:visibility="gone"
+        tools:text="66666dasdsafdsafsadfasdfasdfsafasdfasdffsadfasdfasdfasdfsdfasdf" />
+
+
+    <RatingBar
+        android:id="@+id/ratingbar_score"
+        style="？android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_item_comment_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/app_margin"
+        android:isIndicator="true"
+        android:minHeight="10dp"
+        android:numStars="5"
+        android:progressDrawable="@drawable/layer_ratingbar_star"
+        android:rating="4" />
+
+</RelativeLayout>

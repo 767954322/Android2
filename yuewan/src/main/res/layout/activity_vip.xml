@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context="com.tuwan.yuewan.ui.activity.VipActivity">
+
+
+    <include layout="@layout/include_titlebar_normal" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="183.5dp"
+                android:background="@drawable/vip_background"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/ic_vip"
+                    layout="@layout/vip_level_rebuild" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ic_vip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="@dimen/dimen_17">
+
+                    <TextView
+                        android:id="@+id/tv_vip_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="距离升VIP1还差"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_vip_gxz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="5000"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="贡献值"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_vip_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="VIP0"
+                        android:textColor="#FFC705"
+                        android:textSize="17sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="贡献值"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/vip_gxz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="0"
+                            android:textColor="#FFC705"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="18dp"
+                    android:layout_centerInParent="true"
+                    android:background="#d2d2d2"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="15dp"
+                android:background="#F4F4F4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:text="会员专属权益"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/hy_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_hyzsqy_icon1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center_horizontal"
+                        android:src="@drawable/medal_inactive" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_qy1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="会员勋章"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/dimen_12" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_kq1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="VIP1开启"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/dimen_9" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hy_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_hyzsqy_icon2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/present_inactive" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_qy2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:text="贵族礼物"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/dimen_12" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_kq2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="VIP2开启"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/dimen_9" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hy_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_hyzsqy_icon3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/chatroom_inactive" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_qy3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:text="进聊天室特效"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/dimen_12" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_kq3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="VIP3开启"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/dimen_9" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/hy_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_hyzsqy_icon4"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/customerservice_inactive" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_qy4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="专属客服"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/dimen_12" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_kq4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="VIP4开启"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/dimen_9" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hy_5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_hyzsqy_icon5"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/birth_inactive" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_qy5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="生日祝福"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/dimen_12" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_kq5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="VIP5开启"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/dimen_9" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hy_6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_hyzsqy_icon6"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/stealth_inactive" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_qy6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="进聊天室隐身"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/dimen_12" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_kq6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="VIP6开启"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/dimen_9" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/hy_7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_hyzsqy_icon7"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/contrubution_inactive" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_qy7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="贡献榜隐身"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/dimen_12" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_kq7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="VIP7开启"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/dimen_9" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hy_8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_hyzsqy_icon8"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/banned_inactive" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_qy8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="防禁言"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/dimen_12" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_kq8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="VIP8开启"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/dimen_9" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hy_9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_hyzsqy_icon9"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/diygift_inactive" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_qy9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="定制礼物"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/dimen_12" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_kq9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="VIP9开启"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/dimen_9" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/hy_10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_hyzsqy_icon10"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/hot_inactive" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_qy10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="推荐导师上热门"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/dimen_12" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_kq10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="VIP10开启"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/dimen_9" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_hyzsqy_icon11"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_qy11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="       "
+                        android:textColor="#898989"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_kq11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="        "
+                        android:textColor="#898989"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_hyzsqy_icon12"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_qy12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="        "
+                        android:textColor="#898989"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_hyzsqy_kq12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="        "
+
+                        android:textColor="#898989" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

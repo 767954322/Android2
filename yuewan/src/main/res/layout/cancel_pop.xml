@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_30"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:orientation="vertical"
+        android:paddingTop="50dp">
+
+        <ImageView
+            android:id="@+id/popup_close3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/popup_close2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pop_back"
+                android:orientation="vertical"
+                android:paddingBottom="50dp">
+
+                <ImageView
+                    android:id="@+id/popup_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ordercancel_icon_popup2x" />
+
+                <TextView
+                    android:id="@+id/pop_kq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="订单取消成功"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/pop_js"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="费用将返回您的账户"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/pop_know2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/lin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="-20dp"
+                android:background="@drawable/pop_btn"
+                android:text="知道了" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

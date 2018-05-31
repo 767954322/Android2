@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/iv_contacts_item_all"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:background="@drawable/shape_session_item_normal"
+        android:paddingLeft="@dimen/app_margin"
+        android:paddingRight="@dimen/app_margin">
+
+        <TextView
+            android:id="@+id/tv_contacts_item_order"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="下单成功"
+            android:textColor="#FF666666"
+            android:textSize="14dp" />
+
+        <View
+            style="@style/toolbarlineDark"
+            android:layout_below="@+id/tv_contacts_item_order" />
+
+
+        <ImageView
+            android:id="@+id/iv_contacts_item_order"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_contacts_item_order"
+            android:layout_marginTop="11dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_contacts_item_order"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv_contacts_item_order"
+            android:text="陪玩人员："
+            android:textColor="#666"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/iv_contacts_item_nikename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_contacts_item_order"
+            android:layout_toRightOf="@+id/tv1"
+            android:textColor="#333"
+            android:textSize="12dp"
+            tools:text="可爱杨" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_contacts_item_servicename"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv_contacts_item_order"
+            android:text="下单服务："
+            android:textColor="#666"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/iv_contacts_item_servicename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_contacts_item_nikename"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/tv1"
+            android:textColor="#333"
+            android:textSize="12dp"
+            tools:text="绝地求生" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_contacts_item_time"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv_contacts_item_order"
+            android:text="预约时间："
+            android:textColor="#666"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/iv_contacts_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_contacts_item_servicename"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/tv1"
+            android:textColor="#333"
+            android:textSize="12dp"
+            tools:text="2017-09-12 14:00至18:00" />
+
+        <View
+            android:id="@+id/v1"
+            style="@style/toolbarlineDark"
+            android:layout_below="@+id/iv_contacts_item_order"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tv_contacts_item_detial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/v1"
+            android:drawableRight="@drawable/arrow_right"
+            android:gravity="center_vertical"
+            android:text="查看订单"
+            android:textColor="#999"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+
+</merge>

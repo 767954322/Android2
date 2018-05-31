@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/picker_image_preview_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_titlebar_teacher" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/picker_image_preview_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/picker_image_preview_operator_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#FFF"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/picker_image_preview_orignal_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/app_margin"
+            android:background="@null"
+            android:src="@drawable/ic_message_pic_btm_normal" />
+
+        <TextView
+            android:id="@+id/picker_image_preview_orignal_image_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="4dp"
+            android:gravity="center"
+            android:text="原图"
+            android:textColor="#FF666666"
+            android:textSize="13dp" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/picker_image_preview_send"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:minWidth="56dp"
+            android:text="发送(9)"
+            android:layout_height="28dp"
+            android:layout_marginRight="@dimen/app_margin"
+            android:background="@drawable/shape_button_send_unenable"
+            android:elevation="0dp"
+            android:enabled="false"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:textSize="11dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

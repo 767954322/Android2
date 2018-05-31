@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical"
+    tools:context="com.tuwan.yuewan.ui.activity.ComplaintsActivity">
+
+    <include layout="@layout/include_titlebar_normal" />
+
+    <TextView
+        android:id="@+id/ts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="投诉建议"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/dimen_17" />
+
+    <EditText
+        android:id="@+id/complains_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_320"
+        android:layout_margin="@dimen/dimen_27"
+        android:background="@drawable/com_back"
+        android:cursorVisible="false"
+        android:gravity="top"
+        android:hint="请留下您的吐槽或者建议，我们每天都在改进"
+        android:paddingBottom="@dimen/dimen_23"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_15"
+        android:paddingTop="@dimen/dimen_23"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/color_empty"
+        android:orientation="vertical"></LinearLayout>
+
+    <Button
+        android:id="@+id/complains_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:background="#FFC71A"
+        android:text="提交反馈"
+        android:textSize="15sp" />
+</LinearLayout>

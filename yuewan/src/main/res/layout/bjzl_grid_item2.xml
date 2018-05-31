@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bjzl_grid_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/text_biankuang"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/bjzl_grid_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:choiceMode="singleChoice"
+        android:gravity="center"
+        android:text="特征"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/dimen_14" />
+
+</LinearLayout>

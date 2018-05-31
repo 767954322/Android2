@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tuwan.tuwan">
+
+    <application
+        android:name="com.tuwan.yuewan.YApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo1024"
+        android:theme="@style/TranslucentTheme">
+        <meta-data
+            android:name="com.tuwan.yuewan.nim.uikit.glide.NIMGlideModule"
+            android:value="GlideModule" />
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent" />
+        <!--微信支付-->
+        <!--<activity-->
+            <!--android:name="com.tuwan.tuwan.wxapi.WXPayEntryActivity"-->
+            <!--android:exported="true"-->
+            <!--android:launchMode="singleTop"/>-->
+    </application>
+
+</manifest>

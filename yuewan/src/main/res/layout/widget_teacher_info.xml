@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <ImageView
+        style="@style/IvTeacherInfo"
+        android:src="@drawable/ic_teacher_info_height" />
+
+    <TextView
+        style="@style/TvTeacherInfo"
+        android:text="身高：" />
+
+
+    <TextView
+        android:id="@+id/tv_teacher_info_hight"
+        style="@style/TvTeacherInfoData"
+        tools:text="165CM" />
+
+    <View
+        style="@style/DashView"
+        android:layout_below="@+id/tv_teacher_info_hight"
+        android:layout_marginLeft="10dp" />
+
+
+    <ImageView
+        style="@style/IvTeacherInfo"
+        android:layout_below="@+id/tv_teacher_info_hight"
+        android:src="@drawable/ic_teacher_info_constell" />
+
+    <TextView
+        style="@style/TvTeacherInfo"
+        android:layout_below="@+id/tv_teacher_info_hight"
+        android:text="星座：" />
+
+
+    <TextView
+        android:id="@+id/tv_teacher_info_constell"
+        style="@style/TvTeacherInfoData"
+        android:layout_below="@+id/tv_teacher_info_hight"
+        tools:text="金牛座" />
+
+
+    <View
+        style="@style/DashView"
+        android:layout_below="@+id/tv_teacher_info_constell"
+        android:layout_marginLeft="10dp" />
+
+
+    <ImageView
+        style="@style/IvTeacherInfo"
+        android:layout_below="@+id/tv_teacher_info_constell"
+        android:src="@drawable/ic_teacher_info_work" />
+
+    <TextView
+        style="@style/TvTeacherInfo"
+        android:layout_below="@+id/tv_teacher_info_constell"
+        android:text="职业：" />
+
+
+    <TextView
+        android:id="@+id/tv_teacher_info_work"
+        style="@style/TvTeacherInfoData"
+        android:layout_below="@+id/tv_teacher_info_constell"
+        tools:text="模特" />
+
+
+    <View
+        style="@style/DashView"
+        android:layout_below="@+id/tv_teacher_info_work"
+        android:layout_marginLeft="10dp" />
+
+
+    <ImageView
+        style="@style/IvTeacherInfo"
+        android:layout_below="@+id/tv_teacher_info_work"
+        android:src="@drawable/ic_teacher_info_organs" />
+
+    <TextView
+        style="@style/TvTeacherInfo"
+        android:layout_below="@+id/tv_teacher_info_work"
+        android:text="魅力部位："
+        />
+
+    <TextView
+        android:id="@+id/tv_teacher_info_organs"
+        style="@style/TvTeacherInfoData"
+        android:layout_below="@+id/tv_teacher_info_work"
+        tools:text="眼睛、胸部、腿"
+        android:maxWidth="@dimen/dimen_180"
+        android:ellipsize="end"/>
+
+    <View
+        style="@style/DashView"
+        android:layout_below="@+id/tv_teacher_info_organs"
+        android:layout_marginLeft="10dp" />
+
+
+    <ImageView
+        style="@style/IvTeacherInfo"
+        android:layout_below="@+id/tv_teacher_info_organs"
+        android:src="@drawable/ic_teacher_info_tag" />
+
+    <TextView
+        style="@style/TvTeacherInfo"
+        android:layout_below="@+id/tv_teacher_info_organs"
+        android:text="个性标签：" />
+
+    <TextView
+        android:id="@+id/tv_teacher_info_tag"
+        style="@style/TvTeacherInfoData"
+        android:layout_below="@+id/tv_teacher_info_organs"
+        tools:text="颜值担当、逗比闲聊" />
+
+    <View
+        style="@style/DashView"
+        android:layout_below="@+id/tv_teacher_info_tag"
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+        style="@style/IvTeacherInfo"
+        android:layout_below="@+id/tv_teacher_info_tag"
+        android:src="@drawable/ic_teacher_info_like" />
+
+    <TextView
+        style="@style/TvTeacherInfo"
+        android:layout_below="@+id/tv_teacher_info_tag"
+        android:text="兴趣爱好：" />
+
+
+    <TextView
+        android:id="@+id/tv_teacher_info_like"
+        style="@style/TvTeacherInfoData"
+        android:layout_below="@+id/tv_teacher_info_tag"
+        tools:text="游戏 健身" />
+
+</merge>

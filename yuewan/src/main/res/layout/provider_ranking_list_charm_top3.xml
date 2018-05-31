@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="187dp"
+    android:background="@drawable/bg_rangkinglist_top">
+
+
+    <Switch
+        android:layout_margin="5dp"
+        android:background="@drawable/with_btn_no"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/iv_top2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/iv_top1"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_rankinglist_top2" />
+
+    <ImageView
+        android:id="@+id/iv_top1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bg_rankinglist_top1" />
+
+    <ImageView
+        android:id="@+id/iv_top3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/iv_top1"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_rankinglist_top3" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_avart_container"
+            android:layout_width="wrap_content"
+            android:layout_height="73dp">
+
+            <ImageView
+                android:id="@+id/iv_item_rangkling_list_avart"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="73dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/bg_rankinglist_guard_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="6dp"
+                android:textColor="#FF333333"
+                android:textSize="10dp"
+                android:text="NO.1" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="珂宝宝"
+            android:textColor="#FF333333"
+            android:textSize="14dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_top_rangkling_list_charm_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFC602"
+            android:textSize="10dp"
+            android:layout_marginTop="4dp"
+            tools:text="魅力值 166700" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_top_rangkling_list_age_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_hot_boy_age"
+                android:drawableLeft="@drawable/ic_boy_small"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#FFF"
+                android:textSize="9dp"
+                tools:text="22" />
+
+            <TextView
+                android:id="@+id/tv_top_rangkling_list_viplevel_1"
+                style="@style/tv_vip"
+                />
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/iv_top2"
+        android:layout_alignRight="@+id/iv_top2"
+        android:layout_marginTop="55dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/fl_avart_container2"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp">
+
+            <ImageView
+                android:id="@+id/iv_item_rangkling_list_avart2"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:layout_width="51dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/bg_rankinglist_guard_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="5dp"
+                android:text="NO.2"
+                android:textColor="#FF333333"
+                android:textSize="9dp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="珂宝宝"
+            android:textColor="#FF333333"
+            android:textSize="14dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_top_rangkling_list_charm_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFC602"
+            android:textSize="10dp"
+            android:layout_marginTop="4dp"
+            tools:text="魅力值 166700" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_top_rangkling_list_age_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_hot_boy_age"
+                android:drawableLeft="@drawable/ic_boy_small"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:visibility="gone"
+                android:paddingRight="5dp"
+                android:textColor="#FFF"
+                android:textSize="9dp"
+                tools:text="22" />
+
+            <TextView
+                android:id="@+id/tv_top_rangkling_list_viplevel_2"
+                style="@style/tv_vip"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/iv_top3"
+        android:layout_alignRight="@+id/iv_top3"
+        android:layout_marginTop="55dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/fl_avart_container3"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp">
+
+            <ImageView
+                android:id="@+id/iv_item_rangkling_list_avart3"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:layout_width="51dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/bg_rankinglist_guard_3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="5dp"
+                android:text="NO.3"
+                android:textColor="#FF333333"
+                android:textSize="9dp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="珂宝宝"
+            android:textColor="#FF333333"
+            android:textSize="14dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_top_rangkling_list_charm_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFC602"
+            android:textSize="10dp"
+            android:layout_marginTop="4dp"
+            tools:text="魅力值 166700" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_top_rangkling_list_age_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_hot_boy_age"
+                android:drawableLeft="@drawable/ic_boy_small"
+                android:drawablePadding="2dp"
+                android:visibility="gone"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#FFF"
+                android:textSize="9dp"
+                tools:text="22" />
+
+            <TextView
+                android:id="@+id/tv_top_rangkling_list_viplevel_3"
+                style="@style/tv_vip"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical"
+    tools:context="com.tuwan.yuewan.ui.activity.MyServiceActivity">
+
+    <include layout="@layout/include_titlebar_normal_tv" />
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/linlay"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?actionBarSize"-->
+        <!--android:background="@color/main_bg_color"-->
+        <!--android:paddingLeft="15dp"-->
+        <!--android:paddingRight="15dp">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/serv_back"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@drawable/ic_arrow_back_black" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/serv_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="我的服务"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="18sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/serv_save"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="保存"-->
+            <!--android:textSize="15sp" />-->
+    <!--</RelativeLayout>-->
+
+    <View
+        android:id="@+id/linlay"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/main_bg_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/more"
+            android:text="主接单服务"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="叫醒"
+            android:textColor="#FFBE4D"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/service_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"></ListView>
+</LinearLayout>

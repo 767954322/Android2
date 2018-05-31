@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/include_emotion_bar" />
+
+
+        <FrameLayout
+            android:id="@+id/fl_message_btm_audio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_message_btm_audio"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#FFF"
+                android:gravity="center"
+                android:textColor="#FFFF4949"
+                android:textSize="13dp" />
+
+            <ProgressBar
+                android:id="@+id/pb_message_btm_audio"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:max="60"
+                android:progressDrawable="@drawable/layer_progressbar_devote" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_gift_number_bar"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="#FFF"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/et_gift_number_bar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/app_margin"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="输入礼物数量，最多99999"
+                android:inputType="number"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:textColor="#333"
+                android:textColorHint="#FF999999"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/btn_gift_number_bar_send"
+                android:layout_width="56dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="@dimen/app_margin"
+                android:background="@drawable/shape_bg_button_reply"
+                android:elevation="0dp"
+                android:gravity="center"
+                android:text="@string/btn_send"
+                android:textColor="#FF333333"
+                android:textSize="11dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_emotionview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+</merge>

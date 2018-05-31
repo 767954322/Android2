@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4">
+
+    <RelativeLayout
+        android:id="@+id/cancel_title"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/main_bg_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/fanhui"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="取消订单"
+            android:textColor="#000"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/cancel_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="#FFC602"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="#666666"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/cancel_bt"
+        android:layout_below="@id/cancel_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="取消原因"
+                android:textColor="#999999"
+                android:textSize="14sp"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_marginBottom="@dimen/dimen_12"/>
+
+            <RelativeLayout
+                android:id="@+id/cancel_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_20"
+                android:paddingRight="@dimen/dimen_20"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="大神未响应"
+                    android:textSize="15sp"
+                    android:textColor="#666666"/>
+
+                <ImageView
+                    android:id="@+id/cancel_img1"
+                    android:layout_width="@dimen/dimen_16"
+                    android:layout_height="@dimen/dimen_16"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/pay_choose" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="0.5dp"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/cancel_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_20"
+                android:paddingRight="@dimen/dimen_20"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="大神要求取消订单"
+                    android:textSize="15sp"
+                    android:textColor="#666666"/>
+
+                <ImageView
+                    android:id="@+id/cancel_img2"
+                    android:layout_width="@dimen/dimen_16"
+                    android:layout_height="@dimen/dimen_16"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/pay_choose"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="0.5dp"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/cancel_3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_20"
+                android:paddingRight="@dimen/dimen_20"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单信息填写有误"
+                    android:textSize="15sp"
+                    android:textColor="#666666"/>
+
+                <ImageView
+                    android:id="@+id/cancel_img3"
+                    android:layout_width="@dimen/dimen_16"
+                    android:layout_height="@dimen/dimen_16"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/pay_choose"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="0.5dp"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/cancel_4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_20"
+                android:paddingRight="@dimen/dimen_20"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我临时有事"
+                    android:textSize="15sp"
+                    android:textColor="#666666"/>
+
+                <ImageView
+                    android:id="@+id/cancel_img4"
+                    android:layout_width="@dimen/dimen_16"
+                    android:layout_height="@dimen/dimen_16"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/pay_choose"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="0.5dp"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/cancel_5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_20"
+                android:paddingRight="@dimen/dimen_20"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="尝试性操作"
+                    android:textSize="15sp"
+                    android:textColor="#666666"/>
+
+                <ImageView
+                    android:id="@+id/cancel_img5"
+                    android:layout_width="@dimen/dimen_16"
+                    android:layout_height="@dimen/dimen_16"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/pay_choose"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="其他原因"
+                android:textColor="#999999"
+                android:textSize="14sp"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_marginBottom="@dimen/dimen_12"/>
+
+            <EditText
+                android:id="@+id/cancel_et"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@color/main_bg_color"
+                android:gravity="top"
+                android:hint="请说明你的原因..."
+                android:paddingLeft="20dp"
+                android:visibility="visible"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#9B9B9B" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4F4F4"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="*每天取消订单不得超过5单，否则将无法继续下单。"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

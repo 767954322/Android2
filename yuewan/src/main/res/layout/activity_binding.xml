@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:background="@color/main_bg_color"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/main_bg_color"
+            android:gravity="center_vertical"
+            android:paddingRight="15dp">
+
+            <include layout="@layout/include_back_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="账户绑定"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_17" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#F4F4F4" />
+
+        <LinearLayout
+            android:id="@+id/bind_phones"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bind_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:text="手机绑定"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/bind_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:text=""
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/color_EFEFEF" />
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?actionBarSize"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/bind_tw"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_weight="2"-->
+        <!--android:drawablePadding="10dp"-->
+        <!--android:padding="10dp"-->
+        <!--android:text="兔玩账号绑定"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="16sp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/bind_tw_state"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:text="绑定"-->
+        <!--android:textColor="#B1B1B1"-->
+        <!--android:textSize="30px" />-->
+        <!--</LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bind_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:text="QQ绑定"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/bind_qq_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:text="绑定"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/color_EFEFEF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bind_wx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:text="微信绑定"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/bind_wx_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:text="绑定"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.3dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:background="#BBBBBB" />-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#BBBBBB" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/color_EFEFEF" />
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?actionBarSize"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/bind_wb"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_weight="2"-->
+        <!--android:drawablePadding="10dp"-->
+        <!--android:padding="10dp"-->
+        <!--android:text="微博绑定"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="16sp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/bind_wb_state"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:text="绑定"-->
+        <!--android:textColor="#B1B1B1"-->
+        <!--android:textSize="30px" />-->
+        <!--</LinearLayout>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#F4F4F4" />
+
+        <LinearLayout
+            android:id="@+id/binding_alipay"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="?actionBarSize"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bind_zfb"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="?actionBarSize"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="银行卡绑定"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/bank_yi"
+                android:text="已绑定"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:layout_width="wrap_content"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_14"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="@dimen/dimen_6"
+                android:visibility="gone"
+                android:layout_height="@dimen/sp_10"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:src="@drawable/more" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

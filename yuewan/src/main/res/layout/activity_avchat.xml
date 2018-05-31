@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_chat">
+
+    <include
+        android:id="@+id/avchat_calling_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_105"
+        layout="@layout/layout_avchat_calling_image">
+    </include>
+
+    <include
+        android:id="@+id/avchat_called_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_46.5"
+        layout="@layout/layout_avchat_called_image">
+    </include>
+
+    <include
+        android:id="@+id/avchat_called_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_38"
+        layout="@layout/layout_avchat_called_button"
+        android:layout_above="@+id/avchat_call_button">
+    </include>
+
+    <include
+        android:id="@+id/avchat_call_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_38"
+        layout="@layout/layout_avchat_button">
+    </include>
+
+    <include
+        android:id="@+id/avchat_gift_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_48"
+        android:layout_centerVertical="true"
+        layout="@layout/layout_avchat_gift">
+    </include>
+
+    <TextView
+        android:id="@+id/avchat_income_tips"
+        android:layout_width="@dimen/dimen_148"
+        android:layout_height="@dimen/dimen_42"
+        android:textColor="@color/color_FFC602"
+        android:textSize="@dimen/sp_12"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10"
+        android:background="@drawable/bg_chat_gift"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:id="@+id/avchat_top_tips_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:background="@color/color_FF4949"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/avchat_top_tips_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/color_FFFFFF"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

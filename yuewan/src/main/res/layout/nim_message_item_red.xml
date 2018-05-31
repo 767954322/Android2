@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/rly_tv_session_red"
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:background="@drawable/bg_session_ticket"
+        android:paddingLeft="@dimen/app_margin"
+        android:paddingRight="@dimen/app_margin">
+
+
+        <TextView
+            android:id="@+id/tv_session_red_title"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:gravity="center_vertical"
+            android:textColor="#666"
+            android:textSize="14dp"
+            tools:text="恭喜您，获得一个现金红包" />
+
+        <ImageView
+            android:layout_width="314.5dp"
+            android:layout_height="1.5dp"
+            android:layout_below="@+id/tv_session_red_title"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_pay_sucess_bash" />
+
+        <ImageView
+            android:id="@+id/iv_session_red_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/tv_session_red_title"
+            android:src="@drawable/icon_cash"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/tv_session_red_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_session_red_title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/iv_session_red_icon"
+            android:textColor="#333"
+            android:textSize="14dp"
+            tools:text="十万现金等待瓜分" />
+        <ImageView
+            android:id="@+id/tv_session_red_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:src="@drawable/icon_enter"
+            android:layout_below="@+id/tv_session_red_name"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_session_red_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_session_red_name"
+            android:layout_below="@+id/tv_session_red_enter"
+            android:layout_marginTop="2dp"
+            android:textColor="#999"
+            android:textSize="10dp"
+            tools:text="活动时间：2017.08.08" />
+        
+
+    </RelativeLayout>
+</merge>

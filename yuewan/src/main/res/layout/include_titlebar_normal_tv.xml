@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_titlebar"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dimen_44"
+    android:background="@color/color_FFFFFF"
+    android:gravity="bottom">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/include_back_btn" />
+
+        <TextView
+            android:id="@+id/tv_titlebar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_17"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_titlebar_title_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:background="@drawable/shape_text_message"
+            android:padding="@dimen/dimen_3"
+            android:text="" />
+
+        <View
+            style="@style/toolbarline"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

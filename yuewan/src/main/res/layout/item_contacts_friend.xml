@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@drawable/touch_bg"
+    android:minHeight="90dp">
+
+    <com.tuwan.yuewan.nim.uikit.common.ui.imageview.HeadImageView
+        android:id="@+id/iv_contacts_item_avart"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_contacts_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/iv_contacts_item_avart"
+        android:textColor="#333"
+        android:textSize="14dp"
+        tools:text="小可爱" />
+
+    <LinearLayout
+        android:id="@+id/ll_contacts_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_icon_heigh"
+        android:layout_alignLeft="@+id/tv_contacts_item_name"
+        android:layout_below="@+id/tv_contacts_item_name"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_contacts_item_age"
+            style="@style/tv_age_gender"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:id="@+id/tv_contacts_item_vip"
+            style="@style/tv_age_gender"
+            android:layout_marginRight="5dp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_contacts_item_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginTop="25dp"
+        android:textColor="#FFC2C2C2"
+        android:textSize="9dp"
+        tools:text="汕头 | 离线" />
+
+    <View
+        style="@style/toolbarlineDark"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/app_margin" />
+
+</RelativeLayout>

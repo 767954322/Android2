@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--690 650-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:background="@drawable/shape_session_item_normal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/iv_contacts_item_communique"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop" />
+
+
+        <TextView
+            android:id="@+id/tv_contacts_item_communique_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_contacts_item_communique"
+            android:layout_marginTop="13dp"
+            android:textColor="#FF333333"
+            android:textSize="15dp"
+            tools:text="为心爱的TA准备一个甜蜜惊喜吧！" />
+
+        <TextView
+            android:id="@+id/tv_contacts_item_communique_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_contacts_item_communique_title"
+            android:layout_marginTop="7.5dp"
+            android:textColor="#FF999999"
+            android:textSize="13dp"
+            tools:text="如果你无法简洁的表达你的想法，那只说明你还不够了解它明你还不够了解它。" />
+
+
+        <View
+            android:id="@+id/v1"
+            style="@style/toolbarlineDark"
+            android:layout_below="@+id/tv_contacts_item_communique_desc"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tv_contacts_item_detial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/v1"
+            android:drawableRight="@drawable/arrow_right"
+            android:gravity="center_vertical"
+            android:text="查看详情"
+            android:textColor="#999"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+
+</merge>

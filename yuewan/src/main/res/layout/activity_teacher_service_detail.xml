@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_titlebar_teacher" />
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.tuwan.yuewan.ui.widget.TeacherBtmView
+        android:id="@+id/btm_teacherbtm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

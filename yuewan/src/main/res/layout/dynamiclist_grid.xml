@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dynamiclist_grid_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_140"
+            android:layout_height="@dimen/dimen_140"
+            android:layout_margin="@dimen/dimen_10"
+            android:src="@drawable/ic_report_photo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发布一条动态吧---"
+            android:textSize="@dimen/sp_16" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/dynamiclist_grid_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="@dimen/dimen_5"
+        android:numColumns="2"
+        android:verticalSpacing="@dimen/dimen_5"></GridView>
+</LinearLayout>

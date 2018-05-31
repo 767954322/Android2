@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ListView的头部 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- 内容 -->
+
+    <RelativeLayout
+        android:id="@+id/head_contentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:paddingLeft="30dp"
+        >
+
+        <!-- 箭头图像、进度条 -->
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone">
+
+            <!-- 箭头 -->
+
+            <ImageView
+                android:id="@+id/head_arrowImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/arrow" />
+
+            <!-- 进度条 -->
+
+            <ProgressBar
+                android:id="@+id/head_progressBar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/progressbar_bg"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <!-- 提示、最近更新 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/dimen_10">
+
+            <!-- 提示 -->
+
+            <LinearLayout
+                android:id="@+id/lly_header_loading"
+                android:layout_width="@dimen/dimen_70"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone">
+                <ImageView
+                    android:id="@+id/img_header_one"
+                    android:layout_width="@dimen/dimen_8"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/heart_big"
+                    android:adjustViewBounds="true"
+                    />
+                <ImageView
+                    android:id="@+id/img_header_two"
+                    android:layout_width="@dimen/dimen_8"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/heart_big"
+                    android:adjustViewBounds="true"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    />
+                <ImageView
+                    android:id="@+id/img_header_three"
+                    android:layout_width="@dimen/dimen_8"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/heart_big"
+                    android:adjustViewBounds="true"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/head_tipsTextView"
+                android:layout_width="@dimen/dimen_70"
+                android:layout_height="wrap_content"
+                android:text="下拉刷新"
+                android:textColor="#999999"
+                android:gravity="center"
+                android:textSize="@dimen/dimen_14"
+                android:visibility="visible"/>
+            <ImageView
+                android:id="@+id/img_top_header"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_30"
+                android:src="@drawable/icon_first"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="@dimen/dimen_7"/>
+
+            <!-- 最近更新 -->
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

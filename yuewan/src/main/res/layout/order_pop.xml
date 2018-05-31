@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dimen_92"
+        android:layout_height="@dimen/dimen_102"
+        android:background="@drawable/teacherparticulars_more_popupbackground2"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_20">
+
+        <LinearLayout
+            android:id="@+id/order_reject"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_46"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/menu_jj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/reject_icon2"
+                android:drawablePadding="@dimen/dimen_10"
+                android:gravity="center"
+                android:text="拒绝"
+                android:textColor="@color/color_FFFFFF"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvs"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_0.5"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:background="@color/color_FFFFFF"
+            android:layout_below="@+id/order_reject"/>
+
+        <LinearLayout
+            android:id="@+id/order_complaints"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_46"
+            android:layout_below="@+id/tvs"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/menu_TS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/complaints_icon2"
+                android:drawablePadding="@dimen/dimen_10"
+                android:gravity="center"
+                android:text="投诉"
+                android:textColor="@color/color_FFFFFF" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

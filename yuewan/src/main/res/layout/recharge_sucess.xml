@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/chenggong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="充值成功"
+            android:textColor="#333333"
+            android:textSize="17sp"
+            app:layout_heightPercent="4.6%h"
+            app:layout_marginLeftPercent="40.9%"
+            app:layout_marginTopPercent="4.4%w"
+            app:layout_widthPercent="24%w" />
+
+        <TextView
+            android:id="@+id/xian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chenggong"
+            android:background="#EFEFEF"
+            app:layout_heightPercent="0.3%h"
+            app:layout_marginTopPercent="1.6%" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xian"
+            android:layout_marginBottom="97dp"
+            android:src="@drawable/chenggong3x"
+            app:layout_heightPercent="18%h"
+            app:layout_marginLeftPercent="30.1%"
+            app:layout_marginTopPercent="3%"
+            app:layout_widthPercent="40.7%w" />
+
+        <TextView
+            android:id="@+id/wenzi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xian"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="充值成功"
+            android:textColor="#333333"
+            android:textSize="19sp"
+            app:layout_heightPercent="5%h"
+            app:layout_marginLeftPercent="39.9%w"
+            app:layout_marginTopPercent="23.8%h"
+            app:layout_widthPercent="24.3%w" />
+
+        <TextView
+            android:id="@+id/wenzi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xian"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="预计3分钟内到账，如未能及时到账请联系客服"
+            android:textColor="#999999"
+            android:textSize="13sp"
+            app:layout_heightPercent="3.8%h"
+            app:layout_marginLeftPercent="14.3%w"
+            app:layout_marginTopPercent="29.7%h"
+            app:layout_widthPercent="79.5%w" />
+
+        <TextView
+            android:id="@+id/wenzi3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xian"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="#FFC602"
+            android:textSize="33sp"
+            app:layout_heightPercent="6.3%h"
+            app:layout_marginLeftPercent="34.7%w"
+            app:layout_marginTopPercent="34%h"
+            app:layout_widthPercent="26.7%w" />
+
+        <TextView
+            android:id="@+id/wenzi4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xian"
+            android:gravity="center"
+            android:text="元"
+            android:textColor="#FFC602"
+            android:textSize="15sp"
+            app:layout_heightPercent="6.3%h"
+            app:layout_marginBottomPercent="3.2%h"
+            app:layout_marginLeftPercent="41.7%w"
+            app:layout_marginTopPercent="35.5%h"
+            app:layout_widthPercent="26.7%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl1"
+        android:background="#F4F4F4">
+
+        <Button
+            android:id="@+id/queding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/exitlogin"
+            android:text="确定"
+            android:textColor="#FF333333"
+            app:layout_heightPercent="10%w"
+            app:layout_marginLeftPercent="4%w"
+            app:layout_marginRightPercent="4%w"
+            app:layout_marginTopPercent="10%h"
+            app:layout_widthPercent="92%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

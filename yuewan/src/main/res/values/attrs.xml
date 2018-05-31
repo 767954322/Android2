@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RankingTopThree">
+        <attr name="left_drawable" format="reference" />
+        <attr name="left_text" format="string" />
+        <attr name="arrow_margin_right" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RulerView">
+        <!--刻度的颜色-->
+        <attr name="indicateColor" format="color|reference" />
+        <!--单个刻度的宽 也就是一个竖向的宽度-->
+        <attr name="indicateWidth" format="dimension|reference" />
+        <!--刻度与刻度之间的距离-->
+        <attr name="indicatePadding" format="dimension|reference" />
+        <!--刻度距离控件顶部的距离 与文字无关,已长刻度为准-->
+        <attr name="indicateMargingTop" format="dimension|reference" />
+        <!--刻度的长度  已长刻度为准，短刻度为一半-->
+        <attr name="indicateLongHeigh" format="dimension|reference" />
+
+        <!--文字的颜色-->
+        <attr name="textColor" format="color|reference" />
+        <!--文字的大小-->
+        <attr name="textSize" format="dimension|reference"/>
+        <!--开始的值-->
+        <attr name="begin" format="integer|reference" />
+        <!--结尾的值-->
+        <attr name="end" format="integer|reference" />
+
+        <!--不可约的颜色-->
+        <attr name="disalbeColor" format="color|reference"/>
+        <!--选中的文字颜色-->
+        <attr name="selectedTextColor" format="color|reference"/>
+        <!--选中的文字大小-->
+        <attr name="selectedTextSize" format="dimension|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension"/>
+        <attr name="civ_border_color" format="color"/>
+        <attr name="civ_border_overlay" format="boolean"/>
+        <attr name="civ_fill_color" format="color"/>
+    </declare-styleable>
+
+    <!-- 分页标签 -->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color"/>
+        <attr name="pstsUnderlineColor" format="color"/>
+        <attr name="pstsDividerColor" format="color"/>
+        <attr name="pstsCheckedTextColor" format="reference"/>
+        <attr name="pstsUncheckedTextColor" format="reference"/>
+        <attr name="pstsIndicatorHeight" format="dimension"/>
+        <attr name="pstsUnderlineHeight" format="dimension"/>
+        <attr name="pstsDividerPadding" format="dimension"/>
+        <attr name="pstsTabPaddingLeftRight" format="dimension"/>
+        <attr name="pstsScrollOffset" format="dimension"/>
+        <attr name="pstsTabBackground" format="reference"/>
+        <attr name="pstsShouldExpand" format="boolean"/>
+        <attr name="pstsTextAllCaps" format="boolean"/>
+    </declare-styleable>
+
+    <!-- 左右文本 -->
+    <declare-styleable name="TwoTextView">
+
+        <!-- 左边文本内容 -->
+        <attr name="ttLeftText" format="string|reference"/>
+        <!-- 右边文本内容 -->
+        <attr name="ttRightText" format="string|reference"/>
+        <!-- 左边文本字体大小 -->
+        <attr name="ttLeftTextSize" format="dimension"/>
+        <!-- 右边文本字体大小 -->
+        <attr name="ttRightTextSize" format="dimension"/>
+        <!-- 左边文本颜色 -->
+        <attr name="ttLeftTextColor" format="reference"/>
+        <!-- 右边文本颜色 -->
+        <attr name="ttRightTextColor" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="TitlebarView">
+        <attr name="showRightBtn" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="DropDownMenu">
+        <!--下划线颜色-->
+        <attr name="underlineColor" format="color" />
+        <!--分割线颜色(菜单栏)-->
+        <attr name="dividerColor" format="color" />
+        <!--tab选中颜色-->
+        <attr name="textSelectedColor" format="color" />
+        <!--tab未选中颜色-->
+        <attr name="textUnselectedColor" format="color" />
+        <!--tab 背景颜色-->
+        <attr name="menuBackgroundColor" format="color" />
+        <!--遮罩颜色，一般是半透明-->
+        <attr name="maskColor" format="color" />
+        <!--字体大小-->
+        <attr name="menuTextSize" format="dimension" />
+        <!--tab选中状态图标-->
+        <attr name="menuSelectedIcon" format="reference" />
+        <!--tab未选中状态图标-->
+        <attr name="menuUnselectedIcon" format="reference" />
+    </declare-styleable>
+
+
+</resources>

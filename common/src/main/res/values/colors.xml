@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#147efb</color>
+    <color name="_status_view_text_color">#555</color>
+
+    <color name="color_list_bg">#F4F4F4</color>
+    <color name="color_toolbar_bg">#FFF</color>
+    <color name="color_toolbar_text">#333</color>
+
+</resources>

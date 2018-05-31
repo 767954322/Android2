@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/touch_bg"
+    android:clickable="true">
+
+
+    <com.tuwan.yuewan.nim.uikit.common.ui.imageview.HeadImageView
+        android:id="@+id/img_head"
+        android:layout_width="@dimen/avatar_size_default"
+        android:layout_height="@dimen/avatar_size_default"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/app_margin" />
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@id/img_head"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:textColor="@color/color_black_333333"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_nickname"
+        android:layout_below="@+id/tv_nickname"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_online_state"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:textColor="@color/color_aaaaaa_content_text"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_msg_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="6dp"
+            android:contentDescription="@string/empty"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autoLink="none"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:scrollHorizontally="true"
+            android:textColor="#999"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginTop="14dp"
+        android:textColor="#999"
+        android:textSize="@dimen/text_small_size_ten_sp" />
+
+    <com.tuwan.yuewan.nim.uikit.common.ui.drop.DropFake
+        android:id="@+id/unread_number_tip"
+        android:layout_width="@dimen/redpoint_circle_mm"
+        android:layout_height="@dimen/redpoint_circle_mm"
+        android:layout_alignRight="@+id/tv_date_time"
+        android:layout_below="@id/tv_date_time"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/redpoint_textsize"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/unread_number_explosion"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_nickname"
+        android:layout_marginRight="6dip"
+        android:gravity="center"
+        android:visibility="gone" />
+
+
+    <View
+        android:id="@+id/bottom_line"
+        style="@style/toolbarlineDark"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/app_margin" />
+</RelativeLayout>

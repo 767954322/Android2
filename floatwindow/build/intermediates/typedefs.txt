@@ -1,0 +1,2 @@
+D com/yhao/floatwindow/MoveType$MOVE_TYPE
+D com/yhao/floatwindow/Screen$screenType

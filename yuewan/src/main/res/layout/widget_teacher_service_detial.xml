@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_widget_detial_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/shape_hot_left"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:textColor="#FF333333"
+        android:textSize="17dp"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/tv_widget_detial_level"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/tv_widget_detial_title"
+        android:background="@drawable/shape_teacher_level"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/textcolor_bgyellow_textyellow"
+        android:textSize="10dp"
+        android:visibility="gone"
+        tools:text="钻石" />
+
+
+    <TextView
+        android:id="@+id/tv_widget_detial_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_widget_detial_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/app_margin"
+        android:gravity="bottom"
+        android:textColor="#FF4949"
+        android:textSize="11dp"
+        tools:text="25/小时" />
+
+    <TextView
+        android:id="@+id/tv_widget_detial_slie"
+        android:layout_width="wrap_content"
+        android:layout_height="13dp"
+        android:layout_alignBottom="@+id/tv_widget_detial_price"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/tv_widget_detial_price"
+        android:background="@drawable/shape_hot_sile"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#FFAA6308"
+        android:textSize="9dp"
+        android:visibility="gone"
+        tools:text="1折" />
+
+    <ImageView
+        android:id="@+id/iv_widget_detial_festival"
+        android:layout_width="@dimen/dimen_25"
+        android:layout_height="@dimen/dimen_13"
+        android:layout_alignBottom="@+id/tv_widget_detial_price"
+        android:layout_marginBottom="@dimen/dimen_3"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_toLeftOf="@+id/tv_widget_detial_slie"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_widget_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tv_widget_detial_price"
+        android:layout_below="@+id/tv_widget_detial_price"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:drawableLeft="@drawable/ic_service_total"
+        android:drawablePadding="@dimen/dimen_5"
+        android:textColor="#FF999999"
+        android:textSize="@dimen/dimen_10"
+        tools:text="接单：333次" />
+
+    <TextView
+        android:id="@+id/tv_widget_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tv_widget_detial_price"
+        android:layout_below="@+id/tv_widget_total"
+        android:layout_marginTop="@dimen/dimen_9"
+        android:drawableLeft="@drawable/ic_service_detial_location"
+        android:drawablePadding="@dimen/dimen_5"
+        android:textColor="#FF999999"
+        android:textSize="@dimen/dimen_10"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/tv_widget_speech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_widget_detial_title"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_23"
+        android:background="@drawable/bg_service_speech"
+        android:drawableRight="@drawable/nim_audio_animation_list_left"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_17"
+        android:textColor="#FFC69A01"
+        android:textSize="@dimen/dimen_9"
+        android:visibility="gone"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/tv_widget_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_widget_location"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_25"
+        android:textColor="#FF666666"
+        android:textSize="13sp"
+        tools:text="" />
+
+
+</merge>

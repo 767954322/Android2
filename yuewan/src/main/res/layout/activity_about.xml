@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F6"
+    android:orientation="vertical"
+    tools:context="com.tuwan.yuewan.ui.activity.seeting.AboutActivity">
+
+    <include layout="@layout/include_titlebar_normal" />
+
+    <ImageView
+        android:layout_width="@dimen/dimen_115"
+        android:layout_height="@dimen/dimen_115"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo2x" />
+
+    <TextView
+        android:id="@+id/about_version_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_13.5"
+        android:text="点点约玩 v0.0.1"
+        android:textColor="@color/color_999999" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_33.5"
+        android:background="@color/main_bg_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/about_phone"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="客服热线"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/about_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="010-68608228"
+                android:textSize="@dimen/sp_13"
+                android:textColor="@color/color_F4B903" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:background="@color/color_EFEFEF" />
+
+        <LinearLayout
+            android:id="@+id/about_qq"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="客服QQ"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/about_qq_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_13"
+                android:text="775121240" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:background="#F6F6F6" />
+
+        <TextView
+            android:id="@+id/about_inspect"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:drawableRight="@drawable/more"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="检查更新"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="together">
+
+    <objectAnimator
+        android:duration="100"
+        android:propertyName="alpha"
+        android:valueFrom="0.1"
+        android:valueTo="1"
+        android:valueType="floatType" />
+    <objectAnimator
+        android:duration="100"
+        android:propertyName="scaleX"
+        android:valueFrom="0.8"
+        android:valueTo="1"
+        android:valueType="floatType" />
+    <objectAnimator
+        android:duration="100"
+        android:propertyName="scaleY"
+        android:valueFrom="0.8"
+        android:valueTo="1"
+        android:valueType="floatType" />
+
+
+    <!--Animation alphaAnimation = new AlphaAnimation(0.0f, 1.0f);-->
+    <!--Animation scaleAnimation = new ScaleAnimation(0.1f, 1f, 0.1f, 1f, Animation.RELATIVE_TO_SELF,-->
+    <!--0.5f, Animation.RELATIVE_TO_SELF, 0.5f);-->
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<set xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:ordering="sequentially" >-->
+
+    <!--<objectAnimator-->
+    <!--android:duration="2000"-->
+    <!--android:propertyName="translationX"-->
+    <!--android:valueFrom="-500"-->
+    <!--android:valueTo="0"-->
+    <!--android:valueType="floatType" >-->
+    <!--</objectAnimator>-->
+
+    <!--<set android:ordering="together" >-->
+    <!--<objectAnimator-->
+    <!--android:duration="3000"-->
+    <!--android:propertyName="rotation"-->
+    <!--android:valueFrom="0"-->
+    <!--android:valueTo="360"-->
+    <!--android:valueType="floatType" >-->
+    <!--</objectAnimator>-->
+
+    <!--<set android:ordering="sequentially" >-->
+    <!--<objectAnimator-->
+    <!--android:duration="1500"-->
+    <!--android:propertyName="alpha"-->
+    <!--android:valueFrom="1"-->
+    <!--android:valueTo="0"-->
+    <!--android:valueType="floatType" >-->
+    <!--</objectAnimator>-->
+    <!--<objectAnimator-->
+    <!--android:duration="1500"-->
+    <!--android:propertyName="alpha"-->
+    <!--android:valueFrom="0"-->
+    <!--android:valueTo="1"-->
+    <!--android:valueType="floatType" >-->
+    <!--</objectAnimator>-->
+    <!--</set>-->
+    <!--</set>-->
+    <!--</set>-->
+
+</set>

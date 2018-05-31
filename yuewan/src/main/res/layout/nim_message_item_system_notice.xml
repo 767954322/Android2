@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:background="@drawable/shape_session_item_normal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+
+        <ImageView
+            android:id="@+id/iv_session_notice_icon"
+            android:layout_width="325dp"
+            android:layout_height="170dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_session_notice_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_session_notice_icon"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/iv_session_ticket_icon"
+            android:textColor="#333"
+            android:textSize="15dp"
+            tools:text="为心爱的TA准备一个甜蜜惊喜吧！" />
+
+
+        <TextView
+            android:id="@+id/tv_session_notice_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_session_notice_title"
+            android:layout_marginTop="7.5dp"
+            android:textColor="#FF999999"
+            android:textSize="13dp"
+            tools:text="如果你无法简洁的表达你的想法，那只说明你还不够了解它明你还不够了解它。" />
+
+        <View
+            style="@style/toolbarline"
+            android:layout_below="@+id/tv_session_notice_desc"
+            android:layout_marginTop="12.5dp"
+            android:scaleType="centerCrop" />¬
+
+        <TextView
+            android:id="@+id/tv_session_notice_click"
+            android:layout_width="match_parent"
+            android:layout_height="47.5dp"
+            android:layout_below="@+id/tv_session_notice_desc"
+            android:layout_marginTop="12.5dp"
+            android:drawableRight="@drawable/arrow_right"
+            android:gravity="center_vertical"
+            android:text="查看详情"
+            android:textColor="#FF666666"
+            android:textSize="13dp" />
+
+    </RelativeLayout>
+</merge>

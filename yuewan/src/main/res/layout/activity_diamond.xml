@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_44"
+        android:id="@+id/me_zuanshi_title"
+        android:background="@color/main_bg_color"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/backss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="钻石充值"
+            android:textSize="@dimen/sp_17"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/zh_jilu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp_13"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:text="记录" />
+
+    </RelativeLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_10"
+                android:background="#F4F4F4"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/diamond_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimen_14"
+                            android:layout_height="@dimen/dimen_11"
+                            android:layout_gravity="center"
+                            android:src="@drawable/daimon_icon2x" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 钻石" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#EFEFEF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/my_linear1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_chongzhi_background1"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/diamond1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/daimon_icon2x"
+                                android:text=" 6"
+                                android:textSize="@dimen/sp_12"
+                                android:textColor="#333333"
+                                android:drawablePadding="@dimen/dimen_3" />
+
+                            <TextView
+                                android:id="@+id/dia_mon1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="/￥6"
+                                android:textColor="#999999"
+                                android:textSize="@dimen/sp_12" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/my_linear2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_chongzhi_background"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/diamond2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/daimon_icon2x"
+                                android:text=" 300"
+                                android:textSize="@dimen/sp_12"
+                                android:drawablePadding="@dimen/dimen_3"  />
+
+                            <TextView
+                                android:id="@+id/dia_mon2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="/￥30"
+                                android:textSize="@dimen/sp_12" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/my_linear3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_chongzhi_background"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/diamond3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/daimon_icon2x"
+                                android:text=" 980"
+                                android:textSize="@dimen/sp_12"
+                                android:drawablePadding="@dimen/dimen_3"  />
+
+                            <TextView
+                                android:id="@+id/dia_mon3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="/￥98"
+                                android:textSize="@dimen/sp_12" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/my_linear4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_chongzhi_background"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/diamond4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/daimon_icon2x"
+                                android:lines="1"
+                                android:text=" 2980"
+                                android:textSize="@dimen/sp_12"
+                                android:drawablePadding="@dimen/dimen_3"  />
+
+                            <TextView
+                                android:id="@+id/dia_mon4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:text="/￥298"
+                                android:textSize="@dimen/sp_12" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/my_linear5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_chongzhi_background"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/diamond5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/daimon_icon2x"
+                                android:lines="1"
+                                android:text=" 5180"
+                                android:textSize="@dimen/sp_12"
+                                android:drawablePadding="@dimen/dimen_3"  />
+
+                            <TextView
+                                android:id="@+id/dia_mon5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:text="/￥518"
+                                android:textSize="@dimen/sp_12" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/my_linear6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_chongzhi_background"
+                            android:gravity="center_horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="10dp">
+
+                            <TextView
+                                android:id="@+id/diamond6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/daimon_icon2x"
+                                android:lines="1"
+                                android:text=" 6480"
+                                android:textSize="@dimen/sp_12"
+                                android:drawablePadding="@dimen/dimen_3" />
+
+                            <TextView
+                                android:id="@+id/dia_mon6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:text="/￥648"
+                                android:textSize="@dimen/sp_12"  />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4F4F4"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="支付方式" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_pay_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_main_bg"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/app_margin">
+
+                <View style="@style/DashView" />
+
+                <RadioButton
+                    android:id="@+id/rb_paytype_wechat"
+                    style="@style/pay_rb"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/pay_wechat1x"
+                    android:text="微信" />
+
+                <View style="@style/DashView" />
+
+                <RadioButton
+                    android:id="@+id/rb_paytype_alipay"
+                    style="@style/pay_rb"
+                    android:drawableLeft="@drawable/pay_alipay1x"
+                    android:text="支付宝" />
+
+                <View style="@style/DashView" />
+
+                <RadioButton
+                    android:id="@+id/rb_paytype_ywb"
+                    style="@style/pay_rb"
+                    android:drawableLeft="@drawable/pay_coin1x"
+                    android:text="余额" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_13"
+                    android:text="充值说明:" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_11"
+                    android:text="1.钻石用于聊天室，消息中购买礼物，不能用做下单。" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_11"
+                    android:text="2.充值和活动的钻石不可提现。" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</ScrollView>
+    <Button
+        android:id="@+id/need_pays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:background="#FFC602"
+        android:padding="6dp"
+        android:text="需支付6元" />
+
+</LinearLayout>

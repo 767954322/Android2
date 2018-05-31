@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="49dp"
+    android:background="#FFF"
+    android:orientation="horizontal"
+    android:weightSum="75">
+
+    <LinearLayout
+        android:id="@+id/ll_teacher_btm_chat"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_teacher_chat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:gravity="center"
+            android:text="聊天"
+            android:textColor="#FF666666"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center_vertical"
+        android:background="#FFD8D8D8" />
+
+    <LinearLayout
+        android:id="@+id/ll_teacher_btm_gift"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_teacher_gift" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:gravity="center"
+            android:text="礼物"
+            android:textColor="#FF666666"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="match_parent"
+        android:layout_weight="35"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_teacher_btm_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFC602"
+            android:gravity="center"
+            android:onClick="true"
+            android:text="加载中..."
+            android:textColor="#FF333333"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/imgCallIcon"
+            android:layout_width="@dimen/dimen_15"
+            android:layout_height="@dimen/dimen_14.5"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_55"
+            android:src="@mipmap/icon_call_online2x"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_gift_number_bar"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="#FFF"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/et_gift_number_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/app_margin"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="输入礼物数量，最多99999"
+            android:inputType="number"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:textColor="#333"
+            android:textColorHint="#FF999999"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/btn_gift_number_bar_send"
+            android:layout_width="56dp"
+            android:layout_height="28dp"
+            android:layout_marginRight="@dimen/app_margin"
+            android:background="@drawable/shape_bg_button_reply"
+            android:elevation="0dp"
+            android:gravity="center"
+            android:text="@string/btn_send"
+            android:textColor="#FF333333"
+            android:textSize="11dp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

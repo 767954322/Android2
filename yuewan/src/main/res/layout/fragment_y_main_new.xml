@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_44"
+        android:background="@color/color_main_bg">
+
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_17"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_toolbar_address"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_44"
+        android:layout_alignBottom="@+id/toolbar"
+        android:drawablePadding="@dimen/dimen_4"
+        android:drawableRight="@drawable/ic_arrow_down"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/app_margin"
+        android:text="位置"
+        android:textColor="#FF666666"
+        android:textSize="@dimen/sp_12"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/iv_main_search"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_42"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignParentRight="true"
+        android:elevation="@dimen/dimen_5"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_15"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_main_search_black" />
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar" />
+    <ImageView
+        android:id="@+id/img_index"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="140dp"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        />
+</RelativeLayout>

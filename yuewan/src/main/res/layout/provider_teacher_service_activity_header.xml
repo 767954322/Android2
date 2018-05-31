@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_list_bg"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/fram"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:adjustViewBounds="true"
+            android:id="@+id/iv_service_detial_randimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EEE"
+                android:scaleType="centerCrop"
+             />
+
+        <TextView
+            android:id="@+id/tv_service_detial_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_service_tag"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="6dp"
+            android:textColor="#FFFFFFFF"
+            android:textSize="13dp"
+            android:visibility="gone"
+            tools:text="新秀" />
+
+        <ImageView
+            android:id="@+id/iv_service_detial_vedio_play"
+            android:layout_width="@dimen/dimen_45"
+            android:layout_height="@dimen/dimen_45"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_teacher_vedio_play"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <com.tuwan.yuewan.ui.widget.TeacherServiceUserinfoView
+        android:id="@+id/teacher_service_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.tuwan.yuewan.ui.widget.RankingTopThree
+        android:id="@+id/manlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:arrow_margin_right="@dimen/dimen_15"
+        app:left_drawable="@drawable/ic_teacher_devote"
+        app:left_text="守护榜" />
+
+
+    <com.tuwan.yuewan.ui.widget.TeacherServiceDetialView
+        android:id="@+id/teacher_service_detial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8" />
+
+    <com.tuwan.yuewan.ui.widget.CommentHeaderView
+        android:id="@+id/commentheader_service_detial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

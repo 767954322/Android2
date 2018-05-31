@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bjzl_grid_linear"
+    android:background="@drawable/text_biankuang"
+    android:paddingLeft="@dimen/dimen_19.5"
+    android:paddingRight="@dimen/dimen_19.5"
+    android:paddingTop="@dimen/dimen_9.5"
+    android:paddingBottom="@dimen/dimen_9.5"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/bjzl_grid_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:choiceMode="singleChoice"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/color_666666"
+        android:text="特征" />
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_30"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:orientation="vertical"
+        android:paddingTop="50dp">
+
+        <ImageView
+            android:id="@+id/popup_close2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/popup_close2" />
+
+        <RelativeLayout
+            android:id="@+id/lins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/pop_back"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/popup_icons"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/robot_message_link_width"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/afterorder_icon" />
+
+            <TextView
+                android:id="@+id/receiving_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/popup_icons"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/iterval_20"
+                android:text="接单后,请及时联系用户!"
+                android:textSize="@dimen/sp_20" />
+
+            <LinearLayout
+                android:id="@+id/receiving_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/receiving_tv"
+                android:layout_marginBottom="@dimen/dimen_30"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/receiving_qx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_marginLeft="@dimen/iterval_35"
+                    android:layout_marginRight="@dimen/iterval_35"
+                    android:layout_weight="1"
+                    android:background="@drawable/pop_btns"
+                    android:text="取消" />
+
+                <Button
+                    android:id="@+id/receiving_jd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_marginLeft="@dimen/iterval_35"
+                    android:layout_marginRight="@dimen/iterval_35"
+                    android:layout_weight="1"
+                    android:background="@drawable/pop_btn"
+                    android:text="接单" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

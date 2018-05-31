@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_list_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_titlebar_normal" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_main_bg"
+                android:orientation="vertical"
+                android:paddingBottom="30dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:text="支付剩余时间"
+                    android:textColor="#FF999999"
+                    android:textSize="14dp" />
+
+                <com.tuwan.yuewan.ui.widget.CountDownView
+                    android:id="@+id/countdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp" />
+
+                <!--<LinearLayout-->
+                <!--android:layout_marginTop="40dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_horizontal">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/second"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:text="0"-->
+                <!--android:textSize="16sp" />-->
+
+                <!--<View-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_width="0.5dp"-->
+                <!--android:layout_height="10dp"-->
+                <!--android:background="#000" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/minute"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:text="0"-->
+                <!--android:textSize="16sp" />-->
+                <!--</LinearLayout>-->
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="114dp"
+                android:background="@color/color_main_bg"
+                android:paddingBottom="25dp"
+                android:paddingTop="25dp"
+                android:paddingLeft="@dimen/app_margin"
+                android:paddingRight="@dimen/app_margin">
+
+                <ImageView
+                    android:id="@+id/iv_pay_avart"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_pay_nikenam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/iv_pay_avart"
+                    android:textColor="#FF333333"
+                    android:textSize="16dp"
+                    tools:text="" />
+
+                <TextView
+                    android:id="@+id/tv_pay_servicename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_pay_nikenam"
+                    android:layout_below="@+id/tv_pay_nikenam"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/shape_pay_service_name"
+                    android:paddingBottom="1.5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="1.5dp"
+                    android:textColor="#FFEE9800"
+                    android:textSize="9dp"
+                    tools:text="" />
+
+                <TextView
+                    android:id="@+id/tv_pay_money_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_pay_nikenam"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="#FF666666"
+                    android:textSize="12dp"
+                    tools:text="42 * 1小时" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/tv_pay_money"
+                    android:text="合计："
+                    android:textColor="#FF666666"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/tv_pay_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15dp"
+                    tools:text="¥42.00" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="44.5dp"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:background="@color/color_main_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_15"
+                android:text="选择支付方式"
+                android:textColor="#FF666666"
+
+                android:textSize="@dimen/sp_12" />
+
+
+            <RadioGroup
+                android:id="@+id/rg_pay_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_main_bg"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <View style="@style/DashView" />
+
+                <RadioButton
+                    android:id="@+id/rb_paytype_wechat"
+                    style="@style/pay_rb"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/ic_paytype_wechat"
+                    android:text="微信" />
+
+                <View style="@style/DashView" />
+
+                <RadioButton
+                    android:id="@+id/rb_paytype_alipay"
+                    style="@style/pay_rb"
+                    android:drawableLeft="@drawable/ic_paytype_alipay"
+                    android:text="支付宝" />
+
+                <View style="@style/DashView" />
+
+                <RadioButton
+                    android:id="@+id/rb_paytype_ywb"
+                    style="@style/pay_rb"
+                    android:drawableLeft="@drawable/ic_paytype_ywb"
+                    android:text="约玩币" />
+
+            </RadioGroup>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/marginbtm">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="17.5dp"
+                    android:text="注：一天内未支付订单超过5个，当日将无法继续下单"
+                    android:textColor="#FF999999"
+                    android:textSize="10dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:text="使用约玩币秒升VIP，最高享8折优惠！【查看折扣等级】"
+                    android:textColor="#FF666666"
+                    android:textSize="12dp"
+                    android:visibility="gone"/>
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/tv_pay_confrim"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="#FFC602"
+        android:gravity="center"
+        android:textColor="#FF333333"
+        android:textSize="15dp"
+        tools:text="确认支付  ￥100.00" />
+
+
+</LinearLayout>

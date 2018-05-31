@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/include_back_btn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_titlebar_back"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="10dp"
+        android:text="修改密码"
+        android:textColor="#333"
+        android:textSize="27dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_old_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入旧密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="#666"
+            android:textColorHint="#FF999999"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/iv_register_look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_login_pwd_unlook" />
+    </LinearLayout>
+
+    <View
+        style="@style/toolbarlineDark"
+        android:layout_alignBottom="@+id/et_login_account" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_new_pwd1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入新密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="#666"
+            android:textColorHint="#FF999999"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/iv_register_look2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_login_pwd_unlook" />
+    </LinearLayout>
+
+    <View
+        style="@style/toolbarlineDark"
+        android:layout_alignBottom="@+id/et_login_account" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_new_pwd2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="再次输入新密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="#666"
+            android:textColorHint="#FF999999"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/iv_register_look3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_login_pwd_unlook" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/toolbarlineDark"
+        android:layout_alignBottom="@+id/et_login_pwd" />
+
+
+    <Button
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@+id/tv_welcome_register"
+        android:layout_below="@+id/et_login_pwd"
+        android:layout_marginBottom="17.5dp"
+        android:layout_marginLeft="27.5dp"
+        android:layout_marginRight="27.5dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape_text_bg_maincolor_radiusall"
+        android:gravity="center"
+        android:text="立即修改"
+        android:textColor="#FFF"
+        android:textSize="15dp" />
+
+
+</LinearLayout>

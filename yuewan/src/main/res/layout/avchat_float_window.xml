@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_72"
+    android:layout_height="@dimen/dimen_72"
+    android:id="@+id/avchat_float_content">
+    <com.tuwan.yuewan.nim.uikit.common.ui.imageview.HeadImageView
+        android:id="@+id/avchat_called_head"
+        android:layout_width="@dimen/dimen_72"
+        android:layout_height="@dimen/dimen_72"
+        android:alpha="0.4"/>
+    <ImageView
+        android:layout_width="@dimen/dimen_72"
+        android:layout_height="@dimen/dimen_72"
+        android:background="@drawable/floatingwindow_voice"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="@dimen/sp_13"/>
+</RelativeLayout>

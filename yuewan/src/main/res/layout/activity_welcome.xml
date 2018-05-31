@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.tuwan.yuewan.ui.widget.WelcomeBgView
+        android:id="@+id/bg_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="118.5dp"
+        android:src="@drawable/ic_welcome_logo" />
+
+    <TextView
+        android:id="@+id/tv_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="点点约玩"
+        android:textColor="#FFFFFFFF"
+        android:textSize="19dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_appname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="点点生活  不再孤单"
+        android:textColor="#FF999999"
+        android:textSize="12dp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_welcome_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_welcome_qq"
+                android:drawablePadding="4dp"
+                android:text="QQ登录"
+                android:textColor="#FFC2C2C2"
+                android:textSize="13dp" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_welcome_wechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_welcome_wechat"
+                android:drawablePadding="4dp"
+                android:text="微信登录"
+                android:textColor="#FFC2C2C2"
+                android:textSize="13dp" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_logintyep_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll"
+        android:layout_marginLeft="27.5dp"
+        android:layout_marginRight="27.5dp"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_weight="1"
+            android:background="#FF7B797A" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:text="其他登录方式"
+            android:textColor="#FF7B797A"
+            android:textSize="11dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_weight="1"
+            android:background="#FF7B797A" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_welcome_register"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@+id/ll_logintyep_other"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="27.5dp"
+        android:layout_marginRight="27.5dp"
+        android:background="@drawable/register_btn_submit_bg"
+        android:gravity="center"
+        android:text="手机注册"
+        android:textColor="#FFF5BA03"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_welcome_login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@+id/tv_welcome_register"
+        android:layout_marginBottom="17.5dp"
+        android:layout_marginLeft="27.5dp"
+        android:layout_marginRight="27.5dp"
+        android:background="@drawable/login_btn_submit_bg"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="#333"
+        android:textSize="15dp" />
+
+</RelativeLayout>

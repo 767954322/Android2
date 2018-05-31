@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_service_avart"
+        android:layout_width="@dimen/dimen_42"
+        android:layout_height="@dimen/dimen_42"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_service_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_service_avart"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_toRightOf="@+id/iv_service_avart"
+        android:textColor="#FF333333"
+        android:textSize="@dimen/dimen_14"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/tv_service_age"
+        style="@style/tv_age_gender"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:layout_alignLeft="@+id/tv_service_name"
+        android:layout_below="@+id/tv_service_name" />
+
+
+    <TextView
+        android:id="@+id/tv_service_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_13"
+        android:layout_alignTop="@+id/tv_service_age"
+        android:layout_below="@+id/tv_service_name"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_toRightOf="@+id/tv_service_age"
+        android:background="@drawable/shape_hot_sile"
+        android:drawablePadding="@dimen/dimen_2"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="真人认证"
+        android:textColor="#c88505"
+        android:textSize="9dp"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/tv_service_attention"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:visibility="gone"
+        android:background="@drawable/nim_arrow_right"
+        android:textColor="#FF333333"
+        android:gravity="center"
+        android:textSize="@dimen/dimen_11" />
+    <ImageView
+        android:id="@+id/tv_service_attention2"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:src="@drawable/ic_teacher_attention"
+        android:gravity="center"
+        />
+</RelativeLayout>

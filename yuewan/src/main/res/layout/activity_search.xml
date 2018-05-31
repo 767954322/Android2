@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical"
+    tools:context="com.tuwan.yuewan.ui.activity.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/switch_background">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:src="@drawable/head_search_icon2x" />
+
+            <com.tuwan.yuewan.ui.widget.ClearEditText
+                android:id="@+id/edit"
+                android:layout_width="@dimen/dimen_303"
+                android:layout_height="@dimen/dimen_36"
+                android:background="@null"
+                android:paddingLeft="@dimen/dimen_11"
+                android:paddingRight="@dimen/dimen_34.5"
+                android:singleLine="true"
+                android:textSize="@dimen/sp_12"
+                android:imeOptions="actionSearch"
+                android:hint="搜索昵称"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/switchs"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/sp_13"
+            android:textColor="#666666"
+            android:background="@null"
+            android:layout_weight="0"
+            android:text="取消" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen_100"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="@dimen/dimen_125"
+            android:layout_height="@dimen/dimen_120"
+            android:src="@mipmap/noinformation_icon2x"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="没有相关的搜索结果"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/color_C2C2C2"
+            android:background="@color/color_empty"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/switch_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4F4F4"
+        android:divider="#F4F4F4"
+        android:dividerHeight="1dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"></ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <ListView
+        android:id="@+id/switch_list2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#F4F4F4"
+        android:dividerHeight="5dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"></ListView>
+    </LinearLayout>
+
